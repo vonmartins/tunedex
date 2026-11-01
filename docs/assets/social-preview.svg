@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <!-- GitHub's social preview for the repository. Render with:
+       rsvg-convert docs/assets/social-preview.svg -o docs/assets/social-preview.png -->
+  <rect width="1280" height="640" fill="#cba6f7"/>
+  <rect x="64" y="56" width="1152" height="528" rx="16" fill="#1e1e2e"/>
+  <circle cx="96" cy="88" r="7" fill="#ff5f58"/>
+  <circle cx="120" cy="88" r="7" fill="#ffbd2e"/>
+  <circle cx="144" cy="88" r="7" fill="#18c132"/>
+  <g font-family="JetBrainsMono Nerd Font Mono, JetBrains Mono, DejaVu Sans Mono, monospace">
+    <text x="112" y="214" font-size="104" font-weight="bold" fill="#cdd6f4"><tspan fill="#cba6f7">&gt;</tspan> tunedex</text>
+    <text x="116" y="282" font-size="34" fill="#a6adc8">A free, local-first, scriptable</text>
+    <text x="116" y="328" font-size="34" fill="#a6adc8">DJ library manager.</text>
+    <text x="116" y="410" font-size="24" fill="#f9e2af">~ Luna Vale - Afterglow (feat. Kai Moreno) [xK3vQ9tLmP2]</text>
+    <text x="164" y="446" font-size="24" fill="#cdd6f4">title: <tspan fill="#f38ba8">'Afterglow (feat. Kai Moreno) [xK3…]'</tspan> → <tspan fill="#a6e3a1">'Afterglow'</tspan></text>
+    <text x="164" y="482" font-size="24" fill="#cdd6f4">artist: <tspan fill="#f38ba8">'Luna Vale'</tspan> → <tspan fill="#a6e3a1">'Luna Vale feat. Kai Moreno'</tspan></text>
+    <text x="116" y="530" font-size="24" fill="#cdd6f4">Apply this plan? [y/N]: <tspan fill="#a6e3a1">y</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+name: Bug report
+description: Something tunedex did wrong, or a crash.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Paths and tags in your output may say things about
+        your files; edit out anything you would rather not share.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran, what you expected and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Command and output
+      description: The command line and its full output. The same command with `--json` helps too.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: tunedex version
+      description: The output of `tunedex --version`.
+      placeholder: tunedex 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: Operating system, and the DJ app and its version if one is involved.
+      placeholder: Arch Linux, Mixxx 2.5.1
+    validations:
+      required: true
