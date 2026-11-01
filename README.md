@@ -12,7 +12,7 @@ tunedex cleans the tags of your music, finds duplicates, writes the result into 
 files and exports it to your DJ app. Every change is planned first, shown before it
 happens and can be undone.
 
-<!-- TODO: demo recording (vhs), docs/assets/demo.gif -->
+![tunedex cleaning, deduplicating, tagging and renaming a folder of downloads](https://raw.githubusercontent.com/vonmartins/tunedex/main/docs/assets/demo.gif)
 
 **Documentation: [vonmartins.github.io/tunedex](https://vonmartins.github.io/tunedex/)**
 
