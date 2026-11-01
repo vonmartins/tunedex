@@ -1,0 +1,21 @@
+name: Feature request
+description: Something tunedex should do, or support for an app or format.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you are trying to do
+      description: The problem or the part of your workflow, more than the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: How you picture tunedex helping. Commands, options or examples are welcome.
+  - type: input
+    id: apps
+    attributes:
+      label: DJ apps and tools you use
+      placeholder: Rekordbox 7, Mixxx, beets

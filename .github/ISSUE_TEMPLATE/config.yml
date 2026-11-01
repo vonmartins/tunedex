@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/vonmartins/tunedex/discussions
+    about: Ask how to do something, or share how you use tunedex.
+  - name: Documentation
+    url: https://vonmartins.github.io/tunedex/
+    about: Guides, the tutorial and the reference.
