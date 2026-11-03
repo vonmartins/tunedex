@@ -99,7 +99,8 @@ def identify(
         if lookup.best_score >= MIN_SCORE:
             return Unlinked(lookup.best_score)
         return NotRecognized(lookup.best_score)
-    chosen = _choose(candidates, duration, title, first_release)
+    own = words(artist, title, file_name)
+    chosen = _choose(candidates, duration, title, first_release, own)
     if chosen is None:
         return Unresolved(tuple(candidates[:5]))
     if carried_id and carried_id != chosen.recording_id:
@@ -133,6 +134,7 @@ def _choose(
     duration: float | None,
     title: str | None,
     first_release: Callable[[str], str | None],
+    own: set[str],
 ) -> Candidate | None:
     if len(candidates) == 1:
         return candidates[0]
@@ -153,4 +155,23 @@ def _choose(
     if kept and len({(comparable(c.title), (c.artist or "").casefold()) for c in kept}) == 1:
         # The same song recorded twice in MusicBrainz (different compilations).
         return min(kept, key=lambda c: (first_release(c.recording_id) or "9999", c.recording_id))
-    return None
+    return best_match(kept, own)
+
+
+def best_match(candidates: Sequence[Candidate], own: set[str]) -> Candidate | None:
+    """The candidate clearly closest to the track's own words, if any.
+
+    Each word shared with the track counts one point, and each word of the candidate's
+    artist and title that the track lacks takes one away. The top candidate wins when it
+    has at least one point and no other has as many.
+    """
+    if not own:
+        return None
+    scored = sorted(
+        ((len(own & theirs) - len(theirs - own), c) for c in candidates
+         for theirs in [words(c.artist, c.title)]),
+        key=lambda pair: -pair[0],
+    )  # fmt: skip
+    if not scored or scored[0][0] < 1 or (len(scored) > 1 and scored[1][0] == scored[0][0]):
+        return None
+    return scored[0][1]

@@ -1,0 +1,218 @@
+{
+ "relations": [],
+ "disambiguation": "",
+ "releases": [
+  {
+   "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+   "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+   "artist-credit": [
+    {
+     "joinphrase": "",
+     "name": "ODGProd",
+     "artist": {
+      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+      "disambiguation": "Dub",
+      "country": "FR",
+      "name": "ODGProd",
+      "id": "1232e62a-117f-4e75-a31a-ac4bb311013e",
+      "genres": [
+       {
+        "name": "dub",
+        "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+        "disambiguation": "",
+        "count": 1
+       },
+       {
+        "name": "dub techno",
+        "count": 1,
+        "id": "16aab171-3dce-454e-bb96-2636f15813fc",
+        "disambiguation": ""
+       },
+       {
+        "count": 1,
+        "disambiguation": "",
+        "id": "60f00d05-df4d-496e-8f5a-c45c03a56ad4",
+        "name": "electro"
+       },
+       {
+        "count": 1,
+        "disambiguation": "",
+        "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+        "name": "reggae"
+       }
+      ],
+      "type": "Group",
+      "sort-name": "ODGProd"
+     }
+    }
+   ],
+   "packaging": "None",
+   "genres": [
+    {
+     "name": "dub",
+     "disambiguation": "",
+     "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+     "count": 2
+    },
+    {
+     "name": "electro",
+     "id": "60f00d05-df4d-496e-8f5a-c45c03a56ad4",
+     "disambiguation": "",
+     "count": 2
+    },
+    {
+     "disambiguation": "",
+     "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+     "count": 2,
+     "name": "reggae"
+    }
+   ],
+   "title": "Best of 2015",
+   "disambiguation": "",
+   "barcode": "",
+   "release-group": {
+    "genres": [],
+    "title": "Best of 2015",
+    "first-release-date": "2021-08-02",
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "ODGProd",
+       "type": "Group",
+       "id": "1232e62a-117f-4e75-a31a-ac4bb311013e",
+       "name": "ODGProd",
+       "country": "FR",
+       "disambiguation": "Dub",
+       "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+      },
+      "joinphrase": "",
+      "name": "ODGProd"
+     }
+    ],
+    "id": "df6a3645-0ee3-44f6-a21b-e553fda434de",
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "releases": [],
+    "secondary-types": [
+     "Compilation"
+    ],
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+   },
+   "quality": "normal",
+   "country": "XW",
+   "status": "Official",
+   "id": "fe550070-675f-418a-9482-aa72cc218564",
+   "text-representation": {
+    "language": "eng",
+    "script": "Latn"
+   },
+   "release-events": [
+    {
+     "area": {
+      "sort-name": "[Worldwide]",
+      "type": null,
+      "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+      "name": "[Worldwide]",
+      "type-id": null,
+      "iso-3166-1-codes": [
+       "XW"
+      ],
+      "disambiguation": ""
+     },
+     "date": "2021-08-02"
+    }
+   ],
+   "date": "2021-08-02"
+  }
+ ],
+ "id": "2120ba7f-2be3-4e3d-9224-13a2a76e80de",
+ "length": 223745,
+ "artist-credit": [
+  {
+   "artist": {
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "disambiguation": "",
+    "country": "FR",
+    "name": "Panda Dub",
+    "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+    "genres": [
+     {
+      "disambiguation": "",
+      "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+      "count": 4,
+      "name": "dub"
+     },
+     {
+      "name": "electro",
+      "id": "60f00d05-df4d-496e-8f5a-c45c03a56ad4",
+      "disambiguation": "",
+      "count": 2
+     },
+     {
+      "count": 2,
+      "disambiguation": "",
+      "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+      "name": "electronic"
+     },
+     {
+      "disambiguation": "",
+      "id": "0d15e596-3374-4590-bdb0-0a95d38ab4dc",
+      "count": 2,
+      "name": "ragga"
+     },
+     {
+      "count": 2,
+      "disambiguation": "",
+      "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+      "name": "reggae"
+     }
+    ],
+    "type": "Person",
+    "sort-name": "Panda Dub"
+   },
+   "name": "Panda Dub",
+   "joinphrase": " feat. "
+  },
+  {
+   "name": "Art‐X",
+   "joinphrase": "",
+   "artist": {
+    "genres": [
+     {
+      "name": "dub",
+      "disambiguation": "",
+      "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+      "count": 1
+     },
+     {
+      "count": 1,
+      "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+      "disambiguation": "",
+      "name": "reggae"
+     },
+     {
+      "name": "roots reggae",
+      "id": "f2d4991d-97fa-4c1c-8e09-15ec7668aa43",
+      "disambiguation": "",
+      "count": 1
+     }
+    ],
+    "id": "f445d942-bef9-4411-ac0d-57e046cbd318",
+    "sort-name": "Art‐X",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "disambiguation": "French dub melodica",
+    "name": "Art‐X",
+    "country": "FR"
+   }
+  }
+ ],
+ "isrcs": [],
+ "first-release-date": "2021-08-02",
+ "genres": [],
+ "video": false,
+ "title": "Jessy Bett"
+}

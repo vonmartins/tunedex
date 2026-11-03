@@ -24,7 +24,26 @@ INSIDERS_RELEASE = {
     "date": "2004-08-09",
     "media": [],
 }
+JOLGORIO_EP = "5fc92bf8-4d6d-421e-bf74-dd13cf5a92d4"
+JOLGORIO_ZAPPI = "ee517604-9f1a-4a33-a1fa-9ad55ab12eb4"
+JESSY_DUB_VS_WILD = "fb3674a4-2f5d-4a9e-bb89-786bdfc8c1de"
+JESSY_BEST_OF = "2120ba7f-2be3-4e3d-9224-13a2a76e80de"
+
+
+def credited(recording_id: str, title: str, artist: str, duration: float) -> Any:
+    """An AcoustID answer with one recording and its artist."""
+    recording = {
+        "id": recording_id,
+        "title": title,
+        "duration": duration,
+        "artists": [{"name": artist}],
+    }
+    return {"status": "ok", "results": [{"score": 0.97, "recordings": [recording]}]}
+
+
 LOOKUPS: dict[str, Any] = {
+    "fp-zappi": credited(JOLGORIO_ZAPPI, "Jolgorio", "Jaceo", 383),
+    "fp-best-of": credited(JESSY_BEST_OF, "Jessy Bett", "Panda Dub feat. Art\u2010X", 223),
     "fp-dfrnt": fixture("acoustid-dfrnt.json"),
     "fp-lung": fixture("acoustid-lung.json"),
     "fp-irrelevant": fixture("acoustid-irrelevant.json"),
@@ -45,6 +64,8 @@ PRINTS = {
     "marina.mp3": (200.0, "fp-marina"),
     "insiders.mp3": (419.6, "fp-insiders"),
     "two.mp3": (370.5, "fp-two"),
+    "jolgorio.mp3": (383.0, "fp-zappi"),
+    "jessy.mp3": (223.0, "fp-best-of"),
 }
 
 
@@ -274,3 +295,68 @@ def test_fpcalc_missing(world: World) -> None:
 
     with pytest.raises(EnrichError, match="fpcalc"):
         world.engine.plan_enrich(services)
+
+
+def test_original_release_instead_of_a_compilation(world: World) -> None:
+    world.add("jolgorio.mp3", artist="Jaceo", title="Jolgorio")
+
+    (change,) = world.plan().tracks
+
+    fields = {f.field: f.after for f in change.fields}
+    assert (fields["album"], fields["year"]) == ("Jolgorio - EP", 2015)
+
+
+def test_recording_on_the_tracks_album(world: World) -> None:
+    world.add(
+        "jessy.mp3",
+        artist="Panda Dub & Art-X",
+        title="Jessy Bett",
+        album="Dub vs Wild",
+        year=2015,
+        track_number=3,
+    )
+
+    plan = world.plan()
+
+    (change,) = plan.tracks
+    fields = {f.field: f.after for f in change.fields}
+    assert fields["album"] == "Dub vs. Wild"
+    assert "year" not in fields and "track_number" not in fields  # 2015 and 3 already
+    track = world.store.list_tracks()[0]
+    world.engine.apply(plan, assume_yes)
+    enriched = world.store.get_track(track.id)
+    assert enriched.unmapped["musicbrainz"]["recording_id"] == JESSY_DUB_VS_WILD  # type: ignore[index]
+
+
+def test_album_fields_kept_when_no_release_fits(world: World) -> None:
+    track = world.add(
+        "jolgorio.mp3",
+        artist="Jaceo",
+        title="Jolgorio",
+        album="Ibiza Promo 2016",
+        year=2016,
+        track_number=7,
+        label="Promo",
+    )
+
+    plan = world.plan()
+
+    fields = {f.field for change in plan.tracks for f in change.fields}
+    release_fields = {"album", "album_artist", "year", "release_date", "label"}
+    assert not fields & (release_fields | {"track_number", "disc_number"})
+    assert any("'Ibiza Promo 2016' (1)" in w for w in plan.warnings)
+    world.engine.apply(plan, assume_yes)
+    kept = world.store.get_track(track.id)
+    assert (kept.album, kept.year, kept.track_number) == ("Ibiza Promo 2016", 2016, 7)
+    assert world.plan().warnings == ()  # quiet once applied
+
+
+def test_several_tracks_of_one_album(world: World) -> None:
+    for name in ("a.mp3", "b.mp3", "c.mp3"):
+        world.fpcalc.prints[name] = (383.0, "fp-zappi")
+        world.add(name, artist="Jaceo", title="Jolgorio", album="DJ Selection 371")
+
+    plan = world.plan()
+
+    (line,) = [w for w in plan.warnings if w.startswith("albums not found")]
+    assert line == "albums not found in MusicBrainz, album fields kept: 'DJ Selection 371' (3)"

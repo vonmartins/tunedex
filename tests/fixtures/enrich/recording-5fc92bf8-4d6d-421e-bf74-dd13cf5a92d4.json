@@ -1,0 +1,106 @@
+{
+ "isrcs": [],
+ "artist-credit": [
+  {
+   "joinphrase": "",
+   "name": "Jaceo",
+   "artist": {
+    "type": null,
+    "sort-name": "Jaceo",
+    "genres": [],
+    "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+    "type-id": null,
+    "name": "Jaceo",
+    "disambiguation": "",
+    "country": null
+   }
+  }
+ ],
+ "disambiguation": "",
+ "length": 383947,
+ "relations": [],
+ "title": "Jolgorio",
+ "releases": [
+  {
+   "barcode": null,
+   "title": "Jolgorio - EP",
+   "release-group": {
+    "releases": [],
+    "disambiguation": "",
+    "title": "Jolgorio - EP",
+    "artist-credit": [
+     {
+      "artist": {
+       "name": "Jaceo",
+       "disambiguation": "",
+       "type": null,
+       "sort-name": "Jaceo",
+       "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+       "type-id": null,
+       "country": null
+      },
+      "name": "Jaceo",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "secondary-type-ids": [],
+    "genres": [],
+    "secondary-types": [],
+    "id": "2d67fd97-f528-400f-a73c-3114290c4b75",
+    "first-release-date": "2015-08-28",
+    "primary-type": "EP"
+   },
+   "disambiguation": "",
+   "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+   "release-events": [
+    {
+     "area": {
+      "iso-3166-1-codes": [
+       "XW"
+      ],
+      "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+      "type-id": null,
+      "type": null,
+      "sort-name": "[Worldwide]",
+      "disambiguation": "",
+      "name": "[Worldwide]"
+     },
+     "date": "2015-08-28"
+    }
+   ],
+   "packaging-id": null,
+   "artist-credit": [
+    {
+     "joinphrase": "",
+     "name": "Jaceo",
+     "artist": {
+      "disambiguation": "",
+      "name": "Jaceo",
+      "sort-name": "Jaceo",
+      "type": null,
+      "genres": [],
+      "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+      "type-id": null,
+      "country": null
+     }
+    }
+   ],
+   "packaging": null,
+   "id": "b2f3ca72-397d-41b5-8079-747069830b38",
+   "quality": "normal",
+   "genres": [],
+   "status": "Official",
+   "text-representation": {
+    "language": "spa",
+    "script": "Latn"
+   },
+   "country": "XW",
+   "date": "2015-08-28"
+  }
+ ],
+ "first-release-date": "2015-08-28",
+ "video": false,
+ "genres": [],
+ "id": "5fc92bf8-4d6d-421e-bf74-dd13cf5a92d4"
+}

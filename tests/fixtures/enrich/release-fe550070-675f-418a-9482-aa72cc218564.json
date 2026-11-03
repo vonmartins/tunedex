@@ -1,0 +1,920 @@
+{
+ "asin": null,
+ "date": "2021-08-02",
+ "title": "Best of 2015",
+ "release-events": [
+  {
+   "area": {
+    "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+    "type-id": null,
+    "iso-3166-1-codes": [
+     "XW"
+    ],
+    "sort-name": "[Worldwide]",
+    "type": null,
+    "disambiguation": "",
+    "name": "[Worldwide]"
+   },
+   "date": "2021-08-02"
+  }
+ ],
+ "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+ "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+ "cover-art-archive": {
+  "count": 1,
+  "back": false,
+  "front": true,
+  "darkened": false,
+  "artwork": true
+ },
+ "text-representation": {
+  "script": "Latn",
+  "language": "eng"
+ },
+ "artist-credit": [
+  {
+   "joinphrase": "",
+   "artist": {
+    "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+    "id": "1232e62a-117f-4e75-a31a-ac4bb311013e",
+    "name": "ODGProd",
+    "type": "Group",
+    "sort-name": "ODGProd",
+    "disambiguation": "Dub",
+    "country": "FR"
+   },
+   "name": "ODGProd"
+  }
+ ],
+ "quality": "normal",
+ "barcode": "",
+ "status": "Official",
+ "packaging": "None",
+ "label-info": [],
+ "disambiguation": "",
+ "country": "XW",
+ "id": "fe550070-675f-418a-9482-aa72cc218564",
+ "media": [
+  {
+   "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+   "title": "",
+   "tracks": [
+    {
+     "id": "6356e611-46c3-4b80-ac05-c6270074d032",
+     "artist-credit": [
+      {
+       "artist": {
+        "id": "3e2bd091-e136-441a-baee-227bc254fffb",
+        "type-id": null,
+        "disambiguation": "dub compilation",
+        "country": null,
+        "sort-name": "Brainless",
+        "type": null,
+        "name": "Brainless"
+       },
+       "joinphrase": "",
+       "name": "Brainless"
+      }
+     ],
+     "length": 302250,
+     "recording": {
+      "video": false,
+      "title": "Dub.0",
+      "disambiguation": "",
+      "first-release-date": "2021-08-02",
+      "artist-credit": [
+       {
+        "name": "Brainless",
+        "artist": {
+         "id": "3e2bd091-e136-441a-baee-227bc254fffb",
+         "type-id": null,
+         "name": "Brainless",
+         "country": null,
+         "disambiguation": "dub compilation",
+         "sort-name": "Brainless",
+         "type": null
+        },
+        "joinphrase": ""
+       }
+      ],
+      "id": "8a400a9f-d0e6-4348-ba06-293d18ce14ea",
+      "length": 302250
+     },
+     "position": 1,
+     "number": "1",
+     "title": "Dub.0"
+    },
+    {
+     "title": "Rockers Mood (Tribute to Augustus Pablo)",
+     "recording": {
+      "first-release-date": "2021-08-02",
+      "length": 181083,
+      "id": "e82112ea-38b1-4276-b72e-4307bf774902",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "sort-name": "Art‐X",
+         "type": "Person",
+         "disambiguation": "French dub melodica",
+         "country": "FR",
+         "name": "Art‐X",
+         "id": "f445d942-bef9-4411-ac0d-57e046cbd318",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Art‐X"
+       }
+      ],
+      "video": false,
+      "title": "Rockers Mood (Tribute to Augustus Pablo)",
+      "disambiguation": ""
+     },
+     "artist-credit": [
+      {
+       "name": "Art‐X",
+       "joinphrase": "",
+       "artist": {
+        "name": "Art‐X",
+        "sort-name": "Art‐X",
+        "type": "Person",
+        "country": "FR",
+        "disambiguation": "French dub melodica",
+        "id": "f445d942-bef9-4411-ac0d-57e046cbd318",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       }
+      }
+     ],
+     "id": "03786aa7-88df-4b47-a79a-c11a8b00b9cd",
+     "length": 181083,
+     "number": "2",
+     "position": 2
+    },
+    {
+     "title": "Musically",
+     "position": 3,
+     "number": "3",
+     "length": 315234,
+     "artist-credit": [
+      {
+       "name": "Kanka",
+       "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "id": "dadede5c-55ad-4d02-bd9d-3544c3438948",
+        "name": "Kanka",
+        "type": "Person",
+        "sort-name": "Kanka",
+        "country": "FR",
+        "disambiguation": "dub"
+       },
+       "joinphrase": ""
+      }
+     ],
+     "id": "845ee181-f640-4f1d-9bc3-b0229ecafdae",
+     "recording": {
+      "disambiguation": "",
+      "video": false,
+      "title": "Musically",
+      "artist-credit": [
+       {
+        "name": "Kanka",
+        "joinphrase": "",
+        "artist": {
+         "type": "Person",
+         "sort-name": "Kanka",
+         "country": "FR",
+         "disambiguation": "dub",
+         "name": "Kanka",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "dadede5c-55ad-4d02-bd9d-3544c3438948"
+        }
+       }
+      ],
+      "id": "14588069-2fbe-4b23-8c5d-cafb640869d1",
+      "length": 315234,
+      "first-release-date": "2021-08-02"
+     }
+    },
+    {
+     "position": 4,
+     "number": "4",
+     "recording": {
+      "disambiguation": "",
+      "title": "Digital Horns",
+      "video": false,
+      "id": "93d5a014-6063-4165-b5aa-3a5e61f170fd",
+      "artist-credit": [
+       {
+        "artist": {
+         "name": "PlusStepper",
+         "disambiguation": "",
+         "country": "UA",
+         "type": null,
+         "sort-name": "PlusStepper",
+         "type-id": null,
+         "id": "12f42500-80c0-46ec-a9cc-114ed7183e52"
+        },
+        "joinphrase": "",
+        "name": "PlusStepper"
+       }
+      ],
+      "length": 251359,
+      "first-release-date": "2021-08-02"
+     },
+     "artist-credit": [
+      {
+       "name": "PlusStepper",
+       "artist": {
+        "name": "PlusStepper",
+        "sort-name": "PlusStepper",
+        "type": null,
+        "country": "UA",
+        "disambiguation": "",
+        "id": "12f42500-80c0-46ec-a9cc-114ed7183e52",
+        "type-id": null
+       },
+       "joinphrase": ""
+      }
+     ],
+     "id": "83be987b-7abe-4c86-a3f9-225792d3ab67",
+     "length": 251359,
+     "title": "Digital Horns"
+    },
+    {
+     "number": "5",
+     "position": 5,
+     "artist-credit": [
+      {
+       "name": "Massive Dub Corporation",
+       "joinphrase": " feat. ",
+       "artist": {
+        "name": "Massive Dub Corporation",
+        "disambiguation": "",
+        "country": "FR",
+        "type": "Group",
+        "sort-name": "Massive Dub Corporation",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "id": "0fff24ab-d437-4fb5-a611-e31b570f890a"
+       }
+      },
+      {
+       "name": "Art‐X",
+       "joinphrase": "",
+       "artist": {
+        "name": "Art‐X",
+        "disambiguation": "French dub melodica",
+        "country": "FR",
+        "sort-name": "Art‐X",
+        "type": "Person",
+        "id": "f445d942-bef9-4411-ac0d-57e046cbd318",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       }
+      }
+     ],
+     "id": "bde77089-26c1-4b92-b255-1fd6cad77b91",
+     "length": 304246,
+     "recording": {
+      "title": "From the End",
+      "video": false,
+      "disambiguation": "",
+      "first-release-date": "2021-08-02",
+      "length": 304246,
+      "id": "15bd5575-14ab-4ab7-bef2-550e72b231b6",
+      "artist-credit": [
+       {
+        "name": "Massive Dub Corporation",
+        "joinphrase": " feat. ",
+        "artist": {
+         "type": "Group",
+         "sort-name": "Massive Dub Corporation",
+         "country": "FR",
+         "disambiguation": "",
+         "name": "Massive Dub Corporation",
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "id": "0fff24ab-d437-4fb5-a611-e31b570f890a"
+        }
+       },
+       {
+        "name": "Art‐X",
+        "artist": {
+         "id": "f445d942-bef9-4411-ac0d-57e046cbd318",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Art‐X",
+         "sort-name": "Art‐X",
+         "type": "Person",
+         "country": "FR",
+         "disambiguation": "French dub melodica"
+        },
+        "joinphrase": ""
+       }
+      ]
+     },
+     "title": "From the End"
+    },
+    {
+     "recording": {
+      "first-release-date": "2021-08-02",
+      "length": 224089,
+      "id": "cbf8d56e-2a78-41cc-9c33-fa1d67fe29ca",
+      "artist-credit": [
+       {
+        "name": "Gary Clunk",
+        "artist": {
+         "id": "78a2fcc2-a3f4-45a8-9879-f946fc19f729",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "dub",
+         "country": "FR",
+         "sort-name": "Clunk, Gary",
+         "type": "Person",
+         "name": "Gary Clunk"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "video": false,
+      "title": "More Freedom",
+      "disambiguation": ""
+     },
+     "length": 224089,
+     "artist-credit": [
+      {
+       "name": "Gary Clunk",
+       "joinphrase": "",
+       "artist": {
+        "id": "78a2fcc2-a3f4-45a8-9879-f946fc19f729",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Gary Clunk",
+        "disambiguation": "dub",
+        "country": "FR",
+        "sort-name": "Clunk, Gary",
+        "type": "Person"
+       }
+      }
+     ],
+     "id": "f84033d3-1580-447d-9306-b27decd97e0b",
+     "number": "6",
+     "position": 6,
+     "title": "More Freedom"
+    },
+    {
+     "position": 7,
+     "number": "7",
+     "id": "d1e7963e-6e6f-451d-b989-ecc70792aa21",
+     "artist-credit": [
+      {
+       "name": "Roots Raid",
+       "joinphrase": " feat. ",
+       "artist": {
+        "sort-name": "Roots Raid",
+        "type": "Person",
+        "country": "FR",
+        "disambiguation": "french producers",
+        "name": "Roots Raid",
+        "id": "2479a3e6-2aca-463b-b185-6efd04df8cd4",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       }
+      },
+      {
+       "name": "Turbo Turps",
+       "artist": {
+        "id": "8e7f37ee-aae0-4515-a510-eac12ca8de66",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "sort-name": "Turbo Turps",
+        "type": "Person",
+        "country": null,
+        "disambiguation": "Singer",
+        "name": "Turbo Turps"
+       },
+       "joinphrase": " & "
+      },
+      {
+       "joinphrase": "",
+       "artist": {
+        "country": "FR",
+        "disambiguation": "Singer (alias Val Dawa)",
+        "sort-name": "Berry, Billy",
+        "type": "Person",
+        "name": "Billy Berry",
+        "id": "a8cbdd20-77eb-4f37-aba6-7b7a605871eb",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       },
+       "name": "Billy Berry"
+      }
+     ],
+     "length": 232080,
+     "recording": {
+      "first-release-date": "2021-08-02",
+      "length": 232080,
+      "id": "64b8874c-5f6f-4250-a58e-edd8e657395f",
+      "artist-credit": [
+       {
+        "name": "Roots Raid",
+        "artist": {
+         "id": "2479a3e6-2aca-463b-b185-6efd04df8cd4",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "FR",
+         "disambiguation": "french producers",
+         "sort-name": "Roots Raid",
+         "type": "Person",
+         "name": "Roots Raid"
+        },
+        "joinphrase": " feat. "
+       },
+       {
+        "name": "Turbo Turps",
+        "joinphrase": " & ",
+        "artist": {
+         "sort-name": "Turbo Turps",
+         "type": "Person",
+         "disambiguation": "Singer",
+         "country": null,
+         "name": "Turbo Turps",
+         "id": "8e7f37ee-aae0-4515-a510-eac12ca8de66",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+       },
+       {
+        "name": "Billy Berry",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "a8cbdd20-77eb-4f37-aba6-7b7a605871eb",
+         "name": "Billy Berry",
+         "country": "FR",
+         "disambiguation": "Singer (alias Val Dawa)",
+         "type": "Person",
+         "sort-name": "Berry, Billy"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "title": "Western Rumors (Ondubground remix)",
+      "video": false,
+      "disambiguation": ""
+     },
+     "title": "Western Rumors (Ondubground remix)"
+    },
+    {
+     "title": "Titania",
+     "length": 314000,
+     "artist-credit": [
+      {
+       "joinphrase": "",
+       "artist": {
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "id": "a668b547-1369-4c74-ab64-c901bab6b746",
+        "country": "FR",
+        "disambiguation": "Dub",
+        "type": "Group",
+        "sort-name": "Sumac Dub",
+        "name": "Sumac Dub"
+       },
+       "name": "Sumac Dub"
+      }
+     ],
+     "id": "d19ff507-68b1-40d6-be55-70e4ed493600",
+     "recording": {
+      "id": "c95cc132-d283-441d-82e3-a9158bcc00d3",
+      "artist-credit": [
+       {
+        "name": "Sumac Dub",
+        "artist": {
+         "disambiguation": "Dub",
+         "country": "FR",
+         "type": "Group",
+         "sort-name": "Sumac Dub",
+         "name": "Sumac Dub",
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "id": "a668b547-1369-4c74-ab64-c901bab6b746"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "length": 314000,
+      "first-release-date": "2015-11-12",
+      "disambiguation": "",
+      "video": false,
+      "title": "Titania"
+     },
+     "number": "8",
+     "position": 8
+    },
+    {
+     "recording": {
+      "first-release-date": "2021-08-02",
+      "id": "ca4e0cea-d8e8-485d-a564-915125d172f3",
+      "length": 294213,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "id": "868d5345-1e84-438a-9069-b2a76421f49f",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "FR",
+         "disambiguation": "",
+         "sort-name": "Hubb, Maÿd",
+         "type": "Person",
+         "name": "Maÿd Hubb"
+        },
+        "name": "Mayd Hubb"
+       }
+      ],
+      "title": "Death 360°",
+      "video": false,
+      "disambiguation": ""
+     },
+     "artist-credit": [
+      {
+       "artist": {
+        "id": "868d5345-1e84-438a-9069-b2a76421f49f",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "FR",
+        "disambiguation": "",
+        "sort-name": "Hubb, Maÿd",
+        "type": "Person",
+        "name": "Maÿd Hubb"
+       },
+       "joinphrase": "",
+       "name": "Mayd Hubb"
+      }
+     ],
+     "id": "7ee9455a-7f24-4967-b2f5-20b39e8b0a40",
+     "length": 294213,
+     "position": 9,
+     "number": "9",
+     "title": "Death 360°"
+    },
+    {
+     "number": "10",
+     "position": 10,
+     "recording": {
+      "disambiguation": "",
+      "title": "Jessy Bett",
+      "video": false,
+      "id": "2120ba7f-2be3-4e3d-9224-13a2a76e80de",
+      "length": 223745,
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "artist": {
+         "disambiguation": "",
+         "country": "FR",
+         "type": "Person",
+         "sort-name": "Panda Dub",
+         "name": "Panda Dub",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "08557f73-6b1c-4281-ad93-ffa660f5b266"
+        },
+        "name": "Panda Dub"
+       },
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "f445d942-bef9-4411-ac0d-57e046cbd318",
+         "type": "Person",
+         "sort-name": "Art‐X",
+         "country": "FR",
+         "disambiguation": "French dub melodica",
+         "name": "Art‐X"
+        },
+        "joinphrase": "",
+        "name": "Art‐X"
+       }
+      ],
+      "first-release-date": "2021-08-02"
+     },
+     "artist-credit": [
+      {
+       "name": "Panda Dub",
+       "joinphrase": " feat. ",
+       "artist": {
+        "name": "Panda Dub",
+        "country": "FR",
+        "disambiguation": "",
+        "sort-name": "Panda Dub",
+        "type": "Person",
+        "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       }
+      },
+      {
+       "name": "Art‐X",
+       "joinphrase": "",
+       "artist": {
+        "id": "f445d942-bef9-4411-ac0d-57e046cbd318",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Art‐X",
+        "sort-name": "Art‐X",
+        "type": "Person",
+        "disambiguation": "French dub melodica",
+        "country": "FR"
+       }
+      }
+     ],
+     "id": "4ec05112-9816-4454-b236-5451ab1d45bb",
+     "length": 223745,
+     "title": "Jessy Bett"
+    },
+    {
+     "number": "11",
+     "position": 11,
+     "recording": {
+      "first-release-date": "2021-08-02",
+      "artist-credit": [
+       {
+        "name": "Dubbytek",
+        "joinphrase": " feat. ",
+        "artist": {
+         "id": "80829ca0-e8eb-4779-897c-63de16f04ef8",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Dubbytek",
+         "country": "FR",
+         "disambiguation": "Dubmaker",
+         "sort-name": "Dubbytek",
+         "type": "Person"
+        }
+       },
+       {
+        "name": "Ragga Twins",
+        "joinphrase": "",
+        "artist": {
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "id": "cc2980fe-d233-42a5-a11d-bae90754e68a",
+         "type": "Group",
+         "sort-name": "Ragga Twins, The",
+         "disambiguation": "",
+         "country": "GB",
+         "name": "The Ragga Twins"
+        }
+       }
+      ],
+      "id": "38b33ec3-dccd-49c9-a870-c9291682f426",
+      "length": 354486,
+      "video": false,
+      "title": "Extended Dub",
+      "disambiguation": ""
+     },
+     "length": 354486,
+     "artist-credit": [
+      {
+       "joinphrase": " feat. ",
+       "artist": {
+        "id": "80829ca0-e8eb-4779-897c-63de16f04ef8",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Dubbytek",
+        "sort-name": "Dubbytek",
+        "type": "Person",
+        "country": "FR",
+        "disambiguation": "Dubmaker"
+       },
+       "name": "Dubbytek"
+      },
+      {
+       "name": "Ragga Twins",
+       "joinphrase": "",
+       "artist": {
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "id": "cc2980fe-d233-42a5-a11d-bae90754e68a",
+        "name": "The Ragga Twins",
+        "type": "Group",
+        "sort-name": "Ragga Twins, The",
+        "country": "GB",
+        "disambiguation": ""
+       }
+      }
+     ],
+     "id": "9dd48514-7d9f-47e6-90dd-5b973050d3d5",
+     "title": "Extended Dub"
+    },
+    {
+     "recording": {
+      "id": "5ee5cf3e-992c-4f72-823c-0b3da746a12f",
+      "artist-credit": [
+       {
+        "artist": {
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "id": "0111fb71-cf86-4d8e-898c-a630d6a3a6f9",
+         "name": "Melbeat",
+         "country": "FR",
+         "disambiguation": "",
+         "type": "Group",
+         "sort-name": "Melbeat"
+        },
+        "joinphrase": "",
+        "name": "Melbeat"
+       }
+      ],
+      "length": 234021,
+      "first-release-date": "2021-08-02",
+      "disambiguation": "",
+      "video": false,
+      "title": "Indian Session"
+     },
+     "artist-credit": [
+      {
+       "name": "Melbeat",
+       "joinphrase": "",
+       "artist": {
+        "sort-name": "Melbeat",
+        "type": "Group",
+        "country": "FR",
+        "disambiguation": "",
+        "name": "Melbeat",
+        "id": "0111fb71-cf86-4d8e-898c-a630d6a3a6f9",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+       }
+      }
+     ],
+     "id": "ee1617e6-8074-4967-9c06-ab1ce3aedfe8",
+     "length": 234021,
+     "number": "12",
+     "position": 12,
+     "title": "Indian Session"
+    },
+    {
+     "artist-credit": [
+      {
+       "name": "Soulprodz",
+       "joinphrase": "",
+       "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "id": "2e11556c-2869-48a7-89fb-a3851c895966",
+        "name": "Soulprodz",
+        "country": "FR",
+        "disambiguation": "french artist (electro-dub-dubstep), realname Peter STIVALET",
+        "type": "Person",
+        "sort-name": "Soulprodz"
+       }
+      }
+     ],
+     "id": "dc2c1d5f-4015-4a36-a151-15e6ed317a05",
+     "length": 267429,
+     "recording": {
+      "disambiguation": "",
+      "title": "Gangsta Steppa",
+      "video": false,
+      "id": "487d23e8-ba10-4d72-a139-057b21fd4f58",
+      "length": 267429,
+      "artist-credit": [
+       {
+        "name": "Soulprodz",
+        "joinphrase": "",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "2e11556c-2869-48a7-89fb-a3851c895966",
+         "name": "Soulprodz",
+         "country": "FR",
+         "disambiguation": "french artist (electro-dub-dubstep), realname Peter STIVALET",
+         "type": "Person",
+         "sort-name": "Soulprodz"
+        }
+       }
+      ],
+      "first-release-date": "2021-08-02"
+     },
+     "position": 13,
+     "number": "13",
+     "title": "Gangsta Steppa"
+    },
+    {
+     "title": "Trouble of the World",
+     "number": "14",
+     "position": 14,
+     "artist-credit": [
+      {
+       "artist": {
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "id": "eb8e2802-0fa3-4ec8-a1a4-8d6c85caf8e1",
+        "name": "Mahom",
+        "type": "Group",
+        "sort-name": "Mahom",
+        "disambiguation": "appears on dub netlabels",
+        "country": "FR"
+       },
+       "joinphrase": "",
+       "name": "MAHOM"
+      }
+     ],
+     "id": "110f81b6-9e63-46c0-8c8f-1292eec3d22e",
+     "length": 213051,
+     "recording": {
+      "disambiguation": "",
+      "title": "Trouble of the World",
+      "video": false,
+      "length": 213051,
+      "id": "11be76e5-cc75-46b5-9672-ac5d506be06c",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "name": "Mahom",
+         "country": "FR",
+         "disambiguation": "appears on dub netlabels",
+         "sort-name": "Mahom",
+         "type": "Group",
+         "id": "eb8e2802-0fa3-4ec8-a1a4-8d6c85caf8e1",
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+        },
+        "name": "MAHOM"
+       }
+      ],
+      "first-release-date": "2021-08-02"
+     }
+    },
+    {
+     "length": 376000,
+     "artist-credit": [
+      {
+       "joinphrase": "",
+       "artist": {
+        "type": "Person",
+        "sort-name": "Panda Dub",
+        "disambiguation": "",
+        "country": "FR",
+        "name": "Panda Dub",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "id": "08557f73-6b1c-4281-ad93-ffa660f5b266"
+       },
+       "name": "Panda Dub"
+      }
+     ],
+     "id": "d973328a-2de3-4b7b-8a87-3ac325ff4d6d",
+     "recording": {
+      "first-release-date": "2021-08-02",
+      "artist-credit": [
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+         "name": "Panda Dub",
+         "type": "Person",
+         "sort-name": "Panda Dub",
+         "disambiguation": "",
+         "country": "FR"
+        },
+        "joinphrase": "",
+        "name": "Panda Dub"
+       }
+      ],
+      "id": "2cee6e41-1c0a-4d23-ab22-e152c987adcf",
+      "length": 376000,
+      "video": false,
+      "title": "Purple Trip",
+      "disambiguation": ""
+     },
+     "number": "15",
+     "position": 15,
+     "title": "Purple Trip"
+    },
+    {
+     "length": 306000,
+     "artist-credit": [
+      {
+       "name": "Full Dub",
+       "artist": {
+        "id": "4d635369-c37d-48b4-ab06-24a0170a8830",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "sort-name": "Full Dub",
+        "type": "Person",
+        "country": "FR",
+        "disambiguation": "",
+        "name": "Full Dub"
+       },
+       "joinphrase": ""
+      }
+     ],
+     "id": "4a040484-2f32-4e10-9cf3-b72a1c8e6eef",
+     "recording": {
+      "disambiguation": "",
+      "video": false,
+      "title": "Raido",
+      "id": "7a99baa6-4522-49b4-86de-69efa40a6c9d",
+      "length": 306000,
+      "artist-credit": [
+       {
+        "name": "Full Dub",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "4d635369-c37d-48b4-ab06-24a0170a8830",
+         "type": "Person",
+         "sort-name": "Full Dub",
+         "country": "FR",
+         "disambiguation": "",
+         "name": "Full Dub"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "first-release-date": "2021-08-02"
+     },
+     "number": "16",
+     "position": 16,
+     "title": "Raido"
+    }
+   ],
+   "format": "Digital Media",
+   "track-offset": 0,
+   "id": "26faf830-9a99-3d7e-9d07-92d15fb06122",
+   "position": 1,
+   "track-count": 16
+  }
+ ]
+}

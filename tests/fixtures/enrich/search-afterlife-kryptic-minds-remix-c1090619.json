@@ -1,0 +1,522 @@
+{
+ "created": "2026-11-02T17:54:16.709Z",
+ "count": 4,
+ "offset": 0,
+ "recordings": [
+  {
+   "id": "d6335390-5bfa-488d-9272-b43ee2feb6cd",
+   "score": 100,
+   "artist-credit-id": "12a9b9f7-012c-30dc-bf89-3d811af6e682",
+   "title": "Afterlife (Kryptic Minds remix)",
+   "length": 274333,
+   "disambiguation": "part of a “MoS: The Sound of Dubstep 2” DJ‐mix",
+   "video": null,
+   "artist-credit": [
+    {
+     "name": "Lung",
+     "artist": {
+      "id": "c1090619-5f94-4cbd-99e1-344a312cdcdf",
+      "name": "Lung",
+      "sort-name": "Lung",
+      "disambiguation": "producer / DJ James Ellaway",
+      "aliases": [
+       {
+        "sort-name": "Ellaway, James",
+        "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+        "name": "James Ellaway",
+        "locale": null,
+        "type": "Legal name",
+        "primary": null,
+        "begin-date": null,
+        "end-date": null
+       },
+       {
+        "sort-name": "Lung",
+        "name": "Lung",
+        "locale": null,
+        "type": null,
+        "primary": null,
+        "begin-date": null,
+        "end-date": null
+       }
+      ]
+     }
+    }
+   ],
+   "first-release-date": "2010-12-27",
+   "releases": [
+    {
+     "id": "b6751ab5-feb4-40e1-9897-3e9002b79aeb",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+     "count": 2,
+     "title": "The Sound of Dubstep 2",
+     "status": "Official",
+     "artist-credit": [
+      {
+       "name": "Various Artists",
+       "artist": {
+        "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+        "name": "Various Artists",
+        "sort-name": "Various Artists",
+        "disambiguation": "add compilations to this artist"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "4a581ae6-fd3e-4376-a28e-7a7bb238760f",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "The Sound of Dubstep 2",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation",
+       "DJ-mix"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+      ]
+     },
+     "date": "2010-12-27",
+     "country": "GB",
+     "release-events": [
+      {
+       "date": "2010-12-27",
+       "area": {
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "name": "United Kingdom",
+        "sort-name": "United Kingdom",
+        "iso-3166-1-codes": [
+         "GB"
+        ]
+       }
+      }
+     ],
+     "track-count": 44,
+     "media": [
+      {
+       "id": "6f7c9a53-8050-3fb2-940c-993c68552b49",
+       "position": 2,
+       "format": "CD",
+       "track": [
+        {
+         "id": "541d1611-40dd-3151-bf1b-ece426410165",
+         "number": "20",
+         "title": "Afterlife (Kryptic Minds remix)",
+         "length": 274333
+        }
+       ],
+       "track-count": 22,
+       "track-offset": 19
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "73d6b7b1-2a6b-42b9-b92b-575774a70180",
+   "score": 100,
+   "artist-credit-id": "12a9b9f7-012c-30dc-bf89-3d811af6e682",
+   "title": "Afterlife (Kryptic Minds remix)",
+   "length": 360674,
+   "video": null,
+   "artist-credit": [
+    {
+     "name": "Lung",
+     "artist": {
+      "id": "c1090619-5f94-4cbd-99e1-344a312cdcdf",
+      "name": "Lung",
+      "sort-name": "Lung",
+      "disambiguation": "producer / DJ James Ellaway",
+      "aliases": [
+       {
+        "sort-name": "Ellaway, James",
+        "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+        "name": "James Ellaway",
+        "locale": null,
+        "type": "Legal name",
+        "primary": null,
+        "begin-date": null,
+        "end-date": null
+       },
+       {
+        "sort-name": "Lung",
+        "name": "Lung",
+        "locale": null,
+        "type": null,
+        "primary": null,
+        "begin-date": null,
+        "end-date": null
+       }
+      ]
+     }
+    }
+   ],
+   "first-release-date": "2010-12-20",
+   "releases": [
+    {
+     "id": "ac691ae5-72e1-4571-a907-7eefad6ad2f7",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+     "count": 1,
+     "title": "Pure Dubstep",
+     "status": "Official",
+     "artist-credit": [
+      {
+       "name": "Various Artists",
+       "artist": {
+        "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+        "name": "Various Artists",
+        "sort-name": "Various Artists",
+        "disambiguation": "add compilations to this artist"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "6b245fba-d4ef-4ced-927b-7d905698bfec",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Pure Dubstep",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+      ]
+     },
+     "date": "2010-12-20",
+     "country": "XW",
+     "release-events": [
+      {
+       "date": "2010-12-20",
+       "area": {
+        "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+        "name": "[Worldwide]",
+        "sort-name": "[Worldwide]",
+        "iso-3166-1-codes": [
+         "XW"
+        ]
+       }
+      }
+     ],
+     "track-count": 21,
+     "media": [
+      {
+       "id": "cfdd9d0b-2cb2-3751-9014-081613ceecca",
+       "position": 1,
+       "format": "Digital Media",
+       "track": [
+        {
+         "id": "682e5040-3c3f-3890-8c38-97fc02616bc6",
+         "number": "9",
+         "title": "Afterlife (Kryptic Minds remix)",
+         "length": 360674
+        }
+       ],
+       "track-count": 21,
+       "track-offset": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bf6253d6-1245-4d94-a0b2-22a870f1614b",
+   "score": 100,
+   "artist-credit-id": "12a9b9f7-012c-30dc-bf89-3d811af6e682",
+   "title": "Afterlife (Kryptic Minds remix)",
+   "length": 360000,
+   "video": null,
+   "artist-credit": [
+    {
+     "name": "Lung",
+     "artist": {
+      "id": "c1090619-5f94-4cbd-99e1-344a312cdcdf",
+      "name": "Lung",
+      "sort-name": "Lung",
+      "disambiguation": "producer / DJ James Ellaway",
+      "aliases": [
+       {
+        "sort-name": "Ellaway, James",
+        "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+        "name": "James Ellaway",
+        "locale": null,
+        "type": "Legal name",
+        "primary": null,
+        "begin-date": null,
+        "end-date": null
+       },
+       {
+        "sort-name": "Lung",
+        "name": "Lung",
+        "locale": null,
+        "type": null,
+        "primary": null,
+        "begin-date": null,
+        "end-date": null
+       }
+      ]
+     }
+    }
+   ],
+   "first-release-date": "2010-12-24",
+   "releases": [
+    {
+     "id": "b30fa2fc-a6bd-47b3-a067-f7df0883e6cf",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+     "count": 1,
+     "title": "The Sound of Dubstep 2",
+     "status": "Official",
+     "disambiguation": "mixed + unmixed",
+     "artist-credit": [
+      {
+       "name": "Various Artists",
+       "artist": {
+        "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+        "name": "Various Artists",
+        "sort-name": "Various Artists",
+        "disambiguation": "add compilations to this artist"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "4a581ae6-fd3e-4376-a28e-7a7bb238760f",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "The Sound of Dubstep 2",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation",
+       "DJ-mix"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+      ]
+     },
+     "date": "2010-12-24",
+     "country": "GB",
+     "release-events": [
+      {
+       "date": "2010-12-24",
+       "area": {
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "name": "United Kingdom",
+        "sort-name": "United Kingdom",
+        "iso-3166-1-codes": [
+         "GB"
+        ]
+       }
+      }
+     ],
+     "track-count": 46,
+     "media": [
+      {
+       "id": "b5543b22-6fff-3096-826b-ce97b48acb31",
+       "position": 1,
+       "format": "Digital Media",
+       "track": [
+        {
+         "id": "f4349fb5-3dbb-3d7b-944b-014cd967028c",
+         "number": "43",
+         "title": "Afterlife (Kryptic Minds remix)",
+         "length": 360000
+        }
+       ],
+       "track-count": 46,
+       "track-offset": 42
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43470206-aae9-46f2-a535-9e0a5094fcfc",
+   "score": 72,
+   "artist-credit-id": "0904153b-2f85-3350-a7ca-ab385858fe85",
+   "title": "Afterlife (Kryptic Minds remix) / One (Your Name) (a cappella)",
+   "length": 318000,
+   "disambiguation": "part of “Ministry of Sound: The Mash Up Mix Bass” DJ‐mix",
+   "video": null,
+   "artist-credit": [
+    {
+     "joinphrase": " / ",
+     "name": "Lung",
+     "artist": {
+      "id": "c1090619-5f94-4cbd-99e1-344a312cdcdf",
+      "name": "Lung",
+      "sort-name": "Lung",
+      "disambiguation": "producer / DJ James Ellaway",
+      "aliases": [
+       {
+        "sort-name": "Ellaway, James",
+        "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+        "name": "James Ellaway",
+        "locale": null,
+        "type": "Legal name",
+        "primary": null,
+        "begin-date": null,
+        "end-date": null
+       },
+       {
+        "sort-name": "Lung",
+        "name": "Lung",
+        "locale": null,
+        "type": null,
+        "primary": null,
+        "begin-date": null,
+        "end-date": null
+       }
+      ]
+     }
+    },
+    {
+     "name": "Groove Mekanix",
+     "artist": {
+      "id": "92e3bd08-ee89-4043-aa5b-c54bf06773e3",
+      "name": "Groove Mekanix",
+      "sort-name": "Groove Mekanix"
+     }
+    }
+   ],
+   "first-release-date": "2011-05-01",
+   "releases": [
+    {
+     "id": "98a25b3e-7161-4470-93df-ef4d79a438a4",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "5168b43d-b10a-3046-9ee3-4281667f9829",
+     "count": 1,
+     "title": "The Mash Up Mix: Bass",
+     "status": "Official",
+     "artist-credit": [
+      {
+       "name": "The Cut Up Boys",
+       "artist": {
+        "id": "df994953-93d6-4b0e-83a9-fe3de12b2696",
+        "name": "The Cut Up Boys",
+        "sort-name": "Cut Up Boys, The"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "25f0456c-2b8d-453b-b6ba-a5180f06ab7c",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "The Mash Up Mix: Bass",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation",
+       "DJ-mix"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+      ]
+     },
+     "date": "2011-05-01",
+     "country": "GB",
+     "release-events": [
+      {
+       "date": "2011-05-01",
+       "area": {
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "name": "United Kingdom",
+        "sort-name": "United Kingdom",
+        "iso-3166-1-codes": [
+         "GB"
+        ]
+       }
+      }
+     ],
+     "track-count": 44,
+     "media": [
+      {
+       "id": "b95a663c-a2af-31b0-be1b-a9066e68853d",
+       "position": 1,
+       "format": "Digital Media",
+       "track": [
+        {
+         "id": "805d9742-8d86-37e7-b444-a8e99d7a4ecb",
+         "number": "44",
+         "title": "Afterlife (Kryptic Minds remix) / One (Your Name) (a cappella)",
+         "length": 318000
+        }
+       ],
+       "track-count": 44,
+       "track-offset": 43
+      }
+     ]
+    },
+    {
+     "id": "866b4e6f-902f-42d8-b936-70480416ce38",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "5168b43d-b10a-3046-9ee3-4281667f9829",
+     "count": 2,
+     "title": "The Mash Up Mix: Bass",
+     "status": "Official",
+     "artist-credit": [
+      {
+       "name": "The Cut Up Boys",
+       "artist": {
+        "id": "df994953-93d6-4b0e-83a9-fe3de12b2696",
+        "name": "The Cut Up Boys",
+        "sort-name": "Cut Up Boys, The"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "25f0456c-2b8d-453b-b6ba-a5180f06ab7c",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "The Mash Up Mix: Bass",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation",
+       "DJ-mix"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+      ]
+     },
+     "date": "2011-05-02",
+     "country": "GB",
+     "release-events": [
+      {
+       "date": "2011-05-02",
+       "area": {
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "name": "United Kingdom",
+        "sort-name": "United Kingdom",
+        "iso-3166-1-codes": [
+         "GB"
+        ]
+       }
+      }
+     ],
+     "track-count": 42,
+     "media": [
+      {
+       "id": "a9e23e3b-614d-3019-bcd0-192b7d91a547",
+       "position": 2,
+       "format": "CD",
+       "track": [
+        {
+         "id": "3d457a33-ea4d-488d-a034-c6d40ef83a03",
+         "number": "20",
+         "title": "Afterlife (Kryptic Minds remix) / One (Your Name) (a cappella)",
+         "length": 318413
+        }
+       ],
+       "track-count": 20,
+       "track-offset": 19
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

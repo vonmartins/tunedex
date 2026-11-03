@@ -1,0 +1,141 @@
+{
+ "length": 223000,
+ "id": "fb3674a4-2f5d-4a9e-bb89-786bdfc8c1de",
+ "releases": [
+  {
+   "genres": [],
+   "title": "Dub vs. Wild",
+   "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+   "packaging-id": null,
+   "packaging": null,
+   "artist-credit": [
+    {
+     "artist": {
+      "genres": [],
+      "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+      "sort-name": "Various Artists",
+      "type": "Other",
+      "disambiguation": "add compilations to this artist",
+      "type-id": "ac897045-5043-3294-969b-187360e45d86",
+      "name": "Various Artists",
+      "country": null
+     },
+     "joinphrase": "",
+     "name": "Various Artists"
+    }
+   ],
+   "text-representation": {
+    "language": null,
+    "script": null
+   },
+   "status": "Official",
+   "id": "69f601a5-21b8-48e2-9f05-829cfae0fea3",
+   "date": "2015-04-18",
+   "release-events": [
+    {
+     "area": {
+      "type-id": null,
+      "iso-3166-1-codes": [
+       "FR"
+      ],
+      "disambiguation": "",
+      "name": "France",
+      "id": "08310658-51eb-3801-80de-5a0739207115",
+      "type": null,
+      "sort-name": "France"
+     },
+     "date": "2015-04-18"
+    }
+   ],
+   "release-group": {
+    "first-release-date": "2015-04-18",
+    "title": "Dub vs. Wild",
+    "genres": [],
+    "primary-type": "Album",
+    "artist-credit": [
+     {
+      "artist": {
+       "disambiguation": "add compilations to this artist",
+       "type-id": "ac897045-5043-3294-969b-187360e45d86",
+       "country": null,
+       "name": "Various Artists",
+       "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+       "type": "Other",
+       "sort-name": "Various Artists"
+      },
+      "name": "Various Artists",
+      "joinphrase": ""
+     }
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "releases": [],
+    "secondary-types": [
+     "Compilation"
+    ],
+    "id": "5c4bdc70-5e62-419a-b4cb-10fe41b38b51",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": ""
+   },
+   "barcode": null,
+   "disambiguation": "",
+   "quality": "normal",
+   "country": "FR"
+  }
+ ],
+ "disambiguation": "",
+ "relations": [],
+ "video": false,
+ "genres": [],
+ "title": "Jessy Bett",
+ "first-release-date": "2015-04-18",
+ "isrcs": [],
+ "artist-credit": [
+  {
+   "name": "Panda Dub",
+   "joinphrase": "",
+   "artist": {
+    "sort-name": "Panda Dub",
+    "type": "Person",
+    "genres": [
+     {
+      "name": "dub",
+      "count": 4,
+      "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+      "disambiguation": ""
+     },
+     {
+      "name": "electro",
+      "count": 2,
+      "id": "60f00d05-df4d-496e-8f5a-c45c03a56ad4",
+      "disambiguation": ""
+     },
+     {
+      "name": "electronic",
+      "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+      "disambiguation": "",
+      "count": 2
+     },
+     {
+      "name": "ragga",
+      "count": 2,
+      "disambiguation": "",
+      "id": "0d15e596-3374-4590-bdb0-0a95d38ab4dc"
+     },
+     {
+      "name": "reggae",
+      "count": 2,
+      "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+      "disambiguation": ""
+     }
+    ],
+    "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+    "name": "Panda Dub",
+    "country": "FR",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "disambiguation": ""
+   }
+  }
+ ]
+}

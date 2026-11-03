@@ -1,70 +1,40 @@
 {
- "genres": [],
- "relations": [],
- "length": 305000,
+ "first-release-date": "2012-07-15",
  "id": "82eaaf51-321f-4cc6-9fc0-ec55f637d2fc",
+ "length": 305000,
  "artist-credit": [
   {
    "name": "Nanobyte",
    "artist": {
-    "name": "Nanobyte",
-    "type": "Group",
-    "sort-name": "Nanobyte",
-    "disambiguation": "Anthony Camilleri and Simon Horne",
-    "country": "GB",
+    "genres": [],
     "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
     "id": "e5107db6-ed66-4118-a239-e71121a56c9e",
-    "genres": []
+    "name": "Nanobyte",
+    "country": "GB",
+    "disambiguation": "Anthony Camilleri and Simon Horne",
+    "type": "Group",
+    "sort-name": "Nanobyte"
    },
    "joinphrase": ""
   }
  ],
- "first-release-date": "2012-07-15",
+ "relations": [],
+ "genres": [],
+ "title": "Tek-1",
+ "isrcs": [
+  "NZIN01200020"
+ ],
+ "video": false,
+ "disambiguation": "",
  "releases": [
   {
-   "id": "faeabdc0-b3f6-45a7-88f1-d51ff21bb141",
    "status": "Official",
    "packaging": "None",
-   "country": "NZ",
    "disambiguation": "",
-   "genres": [
-    {
-     "count": 2,
-     "id": "1b50083b-1afa-4778-82c8-548b309af783",
-     "disambiguation": "",
-     "name": "dubstep"
-    },
-    {
-     "name": "electronic",
-     "disambiguation": "",
-     "count": 2,
-     "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
-    }
-   ],
-   "barcode": "5055317228895",
-   "artist-credit": [
-    {
-     "joinphrase": "",
-     "artist": {
-      "name": "Nanobyte",
-      "country": "GB",
-      "disambiguation": "Anthony Camilleri and Simon Horne",
-      "type": "Group",
-      "sort-name": "Nanobyte",
-      "genres": [],
-      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
-      "id": "e5107db6-ed66-4118-a239-e71121a56c9e"
-     },
-     "name": "Nanobyte"
-    }
-   ],
-   "quality": "normal",
-   "title": "Kalyke EP",
+   "country": "NZ",
+   "id": "faeabdc0-b3f6-45a7-88f1-d51ff21bb141",
    "date": "2012-07-15",
-   "text-representation": {
-    "script": "Latn",
-    "language": "eng"
-   },
+   "title": "Kalyke EP",
    "release-events": [
     {
      "area": {
@@ -82,13 +52,70 @@
     }
    ],
    "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
-   "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b"
+   "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+   "release-group": {
+    "releases": [],
+    "disambiguation": "",
+    "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+    "primary-type": "EP",
+    "title": "Kalyke EP",
+    "genres": [],
+    "id": "4b0c834f-f60e-4439-aca9-b7ffca35e8b0",
+    "artist-credit": [
+     {
+      "name": "Nanobyte",
+      "joinphrase": "",
+      "artist": {
+       "type": "Group",
+       "sort-name": "Nanobyte",
+       "disambiguation": "Anthony Camilleri and Simon Horne",
+       "country": "GB",
+       "name": "Nanobyte",
+       "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+       "id": "e5107db6-ed66-4118-a239-e71121a56c9e"
+      }
+     }
+    ],
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "first-release-date": "2012-07-15"
+   },
+   "text-representation": {
+    "script": "Latn",
+    "language": "eng"
+   },
+   "artist-credit": [
+    {
+     "artist": {
+      "genres": [],
+      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+      "id": "e5107db6-ed66-4118-a239-e71121a56c9e",
+      "country": "GB",
+      "disambiguation": "Anthony Camilleri and Simon Horne",
+      "type": "Group",
+      "sort-name": "Nanobyte",
+      "name": "Nanobyte"
+     },
+     "joinphrase": "",
+     "name": "Nanobyte"
+    }
+   ],
+   "quality": "normal",
+   "genres": [
+    {
+     "disambiguation": "",
+     "id": "1b50083b-1afa-4778-82c8-548b309af783",
+     "count": 2,
+     "name": "dubstep"
+    },
+    {
+     "name": "electronic",
+     "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+     "count": 2,
+     "disambiguation": ""
+    }
+   ],
+   "barcode": "5055317228895"
   }
- ],
- "disambiguation": "",
- "video": false,
- "title": "Tek-1",
- "isrcs": [
-  "NZIN01200020"
  ]
 }

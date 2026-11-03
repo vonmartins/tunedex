@@ -18,6 +18,9 @@ class Services:
     client: Client
     _recordings: dict[str, Recording] = field(default_factory=dict[str, Recording])
     _releases: dict[str, Release] = field(default_factory=dict[str, Release])
+    _searches: dict[tuple[str, str], tuple[Recording, ...]] = field(
+        default_factory=dict[tuple[str, str], tuple[Recording, ...]]
+    )
 
     @classmethod
     def create(
@@ -65,3 +68,9 @@ class Services:
         if release_id not in self._releases:
             self._releases[release_id] = musicbrainz.release(self.client, release_id)
         return self._releases[release_id]
+
+    def search_recordings(self, title: str, artist_id: str) -> tuple[Recording, ...]:
+        key = (title, artist_id)
+        if key not in self._searches:
+            self._searches[key] = musicbrainz.search_recordings(self.client, title, artist_id)
+        return self._searches[key]

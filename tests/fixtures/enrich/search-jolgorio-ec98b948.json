@@ -1,0 +1,305 @@
+{
+ "created": "2026-11-02T17:50:28.635Z",
+ "count": 3,
+ "offset": 0,
+ "recordings": [
+  {
+   "id": "5fc92bf8-4d6d-421e-bf74-dd13cf5a92d4",
+   "score": 100,
+   "artist-credit-id": "e36331dd-e185-3c97-83bd-4f9ec8e2c373",
+   "title": "Jolgorio",
+   "length": 383947,
+   "video": null,
+   "artist-credit": [
+    {
+     "name": "Jaceo",
+     "artist": {
+      "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+      "name": "Jaceo",
+      "sort-name": "Jaceo"
+     }
+    }
+   ],
+   "first-release-date": "2015-08-28",
+   "releases": [
+    {
+     "id": "b2f3ca72-397d-41b5-8079-747069830b38",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "count": 1,
+     "title": "Jolgorio - EP",
+     "status": "Official",
+     "release-group": {
+      "id": "2d67fd97-f528-400f-a73c-3114290c4b75",
+      "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+      "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+      "title": "Jolgorio - EP",
+      "primary-type": "EP"
+     },
+     "date": "2015-08-28",
+     "country": "XW",
+     "release-events": [
+      {
+       "date": "2015-08-28",
+       "area": {
+        "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+        "name": "[Worldwide]",
+        "sort-name": "[Worldwide]",
+        "iso-3166-1-codes": [
+         "XW"
+        ]
+       }
+      }
+     ],
+     "track-count": 2,
+     "media": [
+      {
+       "id": "a84f3cf0-2b45-3992-927d-877c949e2721",
+       "position": 1,
+       "format": "Digital Media",
+       "track": [
+        {
+         "id": "923b017f-9d5b-41ac-b191-1f50ccb9a2a7",
+         "number": "1",
+         "title": "Jolgorio",
+         "length": 383947
+        }
+       ],
+       "track-count": 2,
+       "track-offset": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ee517604-9f1a-4a33-a1fa-9ad55ab12eb4",
+   "score": 100,
+   "artist-credit-id": "e36331dd-e185-3c97-83bd-4f9ec8e2c373",
+   "title": "Jolgorio",
+   "length": 384000,
+   "video": null,
+   "artist-credit": [
+    {
+     "name": "Jaceo",
+     "artist": {
+      "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+      "name": "Jaceo",
+      "sort-name": "Jaceo"
+     }
+    }
+   ],
+   "first-release-date": "2016-06-03",
+   "releases": [
+    {
+     "id": "7d9dec13-dc0d-487a-a31d-251279386472",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "d21324d2-626b-3307-9049-f6ddbb9df7e7",
+     "count": 1,
+     "title": "Zappi Rocks Ibiza",
+     "status": "Official",
+     "artist-credit": [
+      {
+       "name": "Zappi",
+       "artist": {
+        "id": "468c5436-8d80-4f47-9411-7986991d9a9a",
+        "name": "DJ Zappi",
+        "sort-name": "DJ Zappi"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "4aa344fc-3bf2-4c85-aaa3-b09033ea64ac",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Zappi Rocks Ibiza",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+      ]
+     },
+     "date": "2016-06-03",
+     "country": "DE",
+     "release-events": [
+      {
+       "date": "2016-06-03",
+       "area": {
+        "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+        "name": "Germany",
+        "sort-name": "Germany",
+        "iso-3166-1-codes": [
+         "DE"
+        ]
+       }
+      }
+     ],
+     "track-count": 24,
+     "media": [
+      {
+       "id": "e741f45e-fab0-3ebc-9dfb-a62e7fc5085e",
+       "position": 1,
+       "format": "Digital Media",
+       "track": [
+        {
+         "id": "43e4873d-fda2-4f41-8b49-0ef2f1d332e4",
+         "number": "22",
+         "title": "Jolgorio",
+         "length": 384000
+        }
+       ],
+       "track-count": 24,
+       "track-offset": 21
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4f44f391-cb85-42e8-b38a-b3a53630d15b",
+   "score": 85,
+   "artist-credit-id": "e36331dd-e185-3c97-83bd-4f9ec8e2c373",
+   "title": "Jolgorio (original mix)",
+   "length": 234880,
+   "disambiguation": "part of a “Buddha‐Bar XVIII” DJ‐mix",
+   "video": null,
+   "artist-credit": [
+    {
+     "name": "Jaceo",
+     "artist": {
+      "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+      "name": "Jaceo",
+      "sort-name": "Jaceo"
+     }
+    }
+   ],
+   "first-release-date": "2016-05-13",
+   "releases": [
+    {
+     "id": "33619a2e-18fd-46d0-87d3-3cd64262b131",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "99adad44-e936-3030-9eb2-3524c256dc39",
+     "count": 2,
+     "title": "Buddha‐Bar XVIII",
+     "status": "Official",
+     "artist-credit": [
+      {
+       "joinphrase": " & ",
+       "name": "Ravin",
+       "artist": {
+        "id": "d548a08b-125a-4a2f-b2a9-e8866bee9f91",
+        "name": "Ravin",
+        "sort-name": "Ravin",
+        "disambiguation": "DJ and producer"
+       }
+      },
+      {
+       "name": "Sam Popat",
+       "artist": {
+        "id": "51e3e1d0-95ef-4663-ac0c-c3a9d2eb568f",
+        "name": "Sam Popat",
+        "sort-name": "Popat, Sam"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "13965588-a7b9-4919-86c7-f3a204214636",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Buddha‐Bar XVIII",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation",
+       "DJ-mix"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+       "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+      ]
+     },
+     "date": "2016-05-13",
+     "country": "FR",
+     "release-events": [
+      {
+       "date": "2016-05-13",
+       "area": {
+        "id": "08310658-51eb-3801-80de-5a0739207115",
+        "name": "France",
+        "sort-name": "France",
+        "iso-3166-1-codes": [
+         "FR"
+        ]
+       }
+      },
+      {
+       "date": "2016-05-27",
+       "area": {
+        "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+        "name": "Germany",
+        "sort-name": "Germany",
+        "iso-3166-1-codes": [
+         "DE"
+        ]
+       }
+      },
+      {
+       "date": "2016-05-13",
+       "area": {
+        "id": "c6500277-9a3d-349b-bf30-41afdbf42add",
+        "name": "Italy",
+        "sort-name": "Italy",
+        "iso-3166-1-codes": [
+         "IT"
+        ]
+       }
+      },
+      {
+       "date": "2016-05-20",
+       "area": {
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "name": "United Kingdom",
+        "sort-name": "United Kingdom",
+        "iso-3166-1-codes": [
+         "GB"
+        ]
+       }
+      },
+      {
+       "date": "2016-05",
+       "area": {
+        "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+        "name": "Europe",
+        "sort-name": "Europe",
+        "iso-3166-1-codes": [
+         "XE"
+        ]
+       }
+      }
+     ],
+     "track-count": 30,
+     "media": [
+      {
+       "id": "cdd53565-5e1c-30fa-90fd-707450637362",
+       "position": 2,
+       "format": "CD",
+       "track": [
+        {
+         "id": "20ae4ba3-663c-4e37-b370-c18165fadbcb",
+         "number": "5",
+         "title": "Jolgorio (original mix)",
+         "length": 234880
+        }
+       ],
+       "track-count": 15,
+       "track-offset": 4
+      }
+     ]
+    }
+   ],
+   "isrcs": [
+    "GBJAJ1500047"
+   ]
+  }
+ ]
+}

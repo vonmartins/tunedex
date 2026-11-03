@@ -5,8 +5,9 @@ import json
 
 from support.enrich import FIXTURES
 from tunedex.enrich import musicbrainz
-from tunedex.enrich.mapping import choose_release, first_release_date, map_recording
+from tunedex.enrich.mapping import first_release_date, map_recording
 from tunedex.enrich.musicbrainz import Recording, ReleaseRef
+from tunedex.enrich.release import resolve
 
 DFRNT = "b03469f1-8ae8-4e57-a73d-1bb81db98783"
 LUNG = "73d6b7b1-2a6b-42b9-b92b-575774a70180"
@@ -25,13 +26,12 @@ def releases(*refs: tuple[str, str, str | None, str | None]) -> Recording:
     return Recording("r", "T", "A", (), None, (), (), (), tuple(ReleaseRef(*r) for r in refs))
 
 
-def test_album_kept() -> None:
-    rec = releases(("1", "Hits", "Official", "2019"), ("2", "Isles", "Official", "2021-01-22"))
+def chosen(rec: Recording) -> ReleaseRef | None:
+    """The release for a track without album, when MusicBrainz finds nothing else."""
+    return resolve(rec, None, lambda _title, _artist: (), lambda _id: rec).release
 
-    assert choose_release(rec, "isles").id == "2"  # type: ignore[union-attr]
 
-
-def test_earliest_release() -> None:
+def test_first_release_date() -> None:
     rec = releases(
         ("1", "Later", "Official", "2021"),
         ("2", "Earlier", "Official", "2019-05"),
@@ -39,17 +39,12 @@ def test_earliest_release() -> None:
         ("4", "Undated", "Official", None),
     )
 
-    assert choose_release(rec, None).id == "2"  # type: ignore[union-attr]
     assert first_release_date(rec) == "2019-05"
-
-
-def test_no_official_release() -> None:
-    assert choose_release(releases(("1", "Promo", "Promotion", "2019")), None) is None
 
 
 def test_dfrnt_on_its_first_release() -> None:
     rec = recording(DFRNT)
-    ref = choose_release(rec, None)
+    ref = chosen(rec)
     assert ref is not None and ref.title == "Metafiction"
     release = musicbrainz.parse_release(load(f"release-{ref.id}.json"))
 
@@ -72,7 +67,7 @@ def test_dfrnt_on_its_first_release() -> None:
 
 def test_remix_identified() -> None:
     rec = recording(LUNG)
-    ref = choose_release(rec, None)
+    ref = chosen(rec)
     assert ref is not None
     release = musicbrainz.parse_release(load(f"release-{ref.id}.json"))
 

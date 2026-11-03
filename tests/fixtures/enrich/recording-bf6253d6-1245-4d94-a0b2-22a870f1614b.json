@@ -1,13 +1,54 @@
 {
+ "artist-credit": [
+  {
+   "name": "Lung",
+   "artist": {
+    "country": null,
+    "disambiguation": "producer / DJ James Ellaway",
+    "name": "Lung",
+    "id": "c1090619-5f94-4cbd-99e1-344a312cdcdf",
+    "genres": [],
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "sort-name": "Lung",
+    "type": "Person"
+   },
+   "joinphrase": ""
+  }
+ ],
+ "video": false,
+ "relations": [],
+ "isrcs": [],
+ "title": "Afterlife (Kryptic Minds remix)",
+ "length": 360000,
  "releases": [
   {
-   "title": "The Sound of Dubstep 2",
+   "disambiguation": "mixed + unmixed",
+   "barcode": null,
+   "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+   "status": "Official",
+   "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+   "artist-credit": [
+    {
+     "name": "Various Artists",
+     "artist": {
+      "disambiguation": "add compilations to this artist",
+      "country": null,
+      "type": "Other",
+      "sort-name": "Various Artists",
+      "type-id": "ac897045-5043-3294-969b-187360e45d86",
+      "genres": [],
+      "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+      "name": "Various Artists"
+     },
+     "joinphrase": ""
+    }
+   ],
    "genres": [
     {
-     "name": "dubstep",
      "disambiguation": "",
+     "count": 1,
      "id": "1b50083b-1afa-4778-82c8-548b309af783",
-     "count": 1
+     "name": "dubstep"
     },
     {
      "count": 1,
@@ -16,77 +57,69 @@
      "name": "uk garage"
     }
    ],
-   "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
-   "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
-   "artist-credit": [
+   "quality": "normal",
+   "id": "b30fa2fc-a6bd-47b3-a067-f7df0883e6cf",
+   "date": "2010-12-24",
+   "release-events": [
     {
-     "name": "Various Artists",
-     "joinphrase": "",
-     "artist": {
-      "type": "Other",
-      "sort-name": "Various Artists",
-      "id": "89ad4ac3-39f7-470e-963a-56509c546377",
-      "genres": [],
-      "country": null,
-      "name": "Various Artists",
-      "type-id": "ac897045-5043-3294-969b-187360e45d86",
-      "disambiguation": "add compilations to this artist"
+     "date": "2010-12-24",
+     "area": {
+      "disambiguation": "",
+      "type-id": null,
+      "name": "United Kingdom",
+      "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+      "iso-3166-1-codes": [
+       "GB"
+      ],
+      "sort-name": "United Kingdom",
+      "type": null
      }
     }
    ],
    "packaging": "None",
-   "text-representation": {
-    "language": "eng",
-    "script": "Latn"
-   },
-   "id": "b30fa2fc-a6bd-47b3-a067-f7df0883e6cf",
-   "status": "Official",
-   "date": "2010-12-24",
-   "release-events": [
-    {
-     "area": {
-      "iso-3166-1-codes": [
-       "GB"
-      ],
-      "type-id": null,
-      "disambiguation": "",
-      "name": "United Kingdom",
-      "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
-      "sort-name": "United Kingdom",
-      "type": null
-     },
-     "date": "2010-12-24"
-    }
-   ],
-   "barcode": null,
-   "disambiguation": "mixed + unmixed",
    "country": "GB",
-   "quality": "normal"
-  }
- ],
- "id": "bf6253d6-1245-4d94-a0b2-22a870f1614b",
- "length": 360000,
- "relations": [],
- "disambiguation": "",
- "first-release-date": "2010-12-24",
- "title": "Afterlife (Kryptic Minds remix)",
- "genres": [],
- "video": false,
- "artist-credit": [
-  {
-   "name": "Lung",
-   "joinphrase": "",
-   "artist": {
-    "sort-name": "Lung",
-    "type": "Person",
+   "title": "The Sound of Dubstep 2",
+   "text-representation": {
+    "script": "Latn",
+    "language": "eng"
+   },
+   "release-group": {
+    "artist-credit": [
+     {
+      "name": "Various Artists",
+      "artist": {
+       "sort-name": "Various Artists",
+       "type": "Other",
+       "name": "Various Artists",
+       "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+       "country": null,
+       "disambiguation": "add compilations to this artist",
+       "type-id": "ac897045-5043-3294-969b-187360e45d86"
+      },
+      "joinphrase": ""
+     }
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+     "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+    ],
+    "title": "The Sound of Dubstep 2",
+    "secondary-types": [
+     "Compilation",
+     "DJ-mix"
+    ],
+    "disambiguation": "",
+    "releases": [],
+    "first-release-date": "2010-12-24",
+    "id": "4a581ae6-fd3e-4376-a28e-7a7bb238760f",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
     "genres": [],
-    "id": "c1090619-5f94-4cbd-99e1-344a312cdcdf",
-    "name": "Lung",
-    "country": null,
-    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
-    "disambiguation": "producer / DJ James Ellaway"
+    "primary-type": "Album"
    }
   }
  ],
- "isrcs": []
+ "disambiguation": "",
+ "first-release-date": "2010-12-24",
+ "id": "bf6253d6-1245-4d94-a0b2-22a870f1614b",
+ "genres": []
 }
