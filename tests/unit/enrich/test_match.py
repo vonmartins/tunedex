@@ -169,3 +169,88 @@ def test_carried_id_skips_the_check() -> None:
     outcome = run_tags(("Korsakoff", "Pendeho"), artist="Khainz", carried="rec")
 
     assert isinstance(outcome, Identified)
+
+
+def tied(*candidates: Candidate, title: str | None, artist: str | None, file_name: str,
+         duration: float = 300.0):  # fmt: skip
+    return identify(
+        Lookup(0.97, candidates),
+        duration=duration,
+        title=title,
+        carried_id=None,
+        first_release=lambda _rid: None,
+        artist=artist,
+        file_name=file_name,
+    )
+
+
+def test_guest_artist_the_track_does_not_name() -> None:
+    outcome = tied(
+        candidate("a", title="1000 Mile Drift", artist="Pitch Black", duration=354),
+        candidate("b", title="1000 Mile Drift", artist="Pitch Black, Brother J", duration=355),
+        title="1000 Mile Drift", artist="Pitch Black", file_name="Pitch Black - 1000 Mile Drift",
+        duration=354.5,
+    )  # fmt: skip
+    assert outcome == Identified("a", 0.97)
+
+
+def test_guest_artist_from_the_file_name() -> None:
+    outcome = tied(
+        candidate("a", title="Acid", artist="Abe Duque, Blake Baxter", duration=373),
+        candidate("b", title="Acid", artist="Abe Duque", duration=366),
+        title=None, artist=None, file_name="Abe Duque - Acid [www.slider.kz]", duration=368,
+    )  # fmt: skip
+    assert outcome == Identified("b", 0.97)
+
+
+def test_recording_by_another_artist() -> None:
+    outcome = tied(
+        candidate("a", title="Do You Want My Love", artist="Demuja", duration=322),
+        candidate("b", title="Do You Want My Love", artist="李玟", duration=315),
+        title=None, artist=None, file_name="Demuja - Do You Want My Love", duration=320,
+    )  # fmt: skip
+    assert outcome == Identified("a", 0.97)
+
+
+def test_other_song_with_a_shared_guest() -> None:
+    outcome = tied(
+        candidate("a", title="Shinobi", artist="Dubterror, Echo Ranks, Santanu", duration=278),
+        candidate("b", title="Technology", artist="Dub Terror, Echo Ranks", duration=281),
+        title=None, artist=None,
+        file_name="Dub Terror - Technology (ft. Echo Ranks) REGGAE DUB", duration=280,
+    )  # fmt: skip
+    assert outcome == Identified("b", 0.97)
+
+
+def test_no_clear_best_match() -> None:
+    outcome = tied(
+        candidate("a", title="Dropping", artist="Kitbuilders", duration=None),  # 0 s, as parsed
+        candidate("b", title="The Marching Dead", artist="Xela", duration=350),
+        title=None, artist=None, file_name="Eddy-M-Dropping-Original-Mix-683475092",
+        duration=350,
+    )  # fmt: skip
+    assert isinstance(outcome, Unresolved)
+
+
+def test_equal_scores_stay_unresolved() -> None:
+    outcome = tied(
+        candidate("a", title="Song", artist="Alpha"),
+        candidate("b", title="Song", artist="Beta"),
+        title="Song", artist=None, file_name="Song",
+    )  # fmt: skip
+    assert isinstance(outcome, Unresolved)
+
+
+def test_recording_of_unknown_length() -> None:
+    answer = {
+        "status": "ok",
+        "results": [{"score": 0.97, "recordings": [
+            {"id": "a", "title": "Dropping", "duration": 0, "artists": [{"name": "Kitbuilders"}]},
+        ]}],
+    }  # fmt: skip
+    lookup = acoustid.parse(answer)
+
+    assert lookup.candidates[0].duration is None
+    outcome = identify(lookup, duration=350.0, title="Dropping", carried_id=None,
+                       first_release=lambda _rid: None)  # fmt: skip
+    assert outcome == Identified("a", 0.97)

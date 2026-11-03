@@ -1,0 +1,398 @@
+{
+ "media": [
+  {
+   "tracks": [
+    {
+     "artist-credit": [
+      {
+       "name": "Tiburk Sound System",
+       "joinphrase": "",
+       "artist": {
+        "name": "Tiburk Sound System",
+        "sort-name": "Tiburk Sound System",
+        "country": "FR",
+        "id": "39fe97d4-c8ad-42a4-80b6-e19ede1e72d9",
+        "type": "Person",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       }
+      }
+     ],
+     "number": "1",
+     "recording": {
+      "artist-credit": [
+       {
+        "name": "Tiburk Sound System",
+        "joinphrase": "",
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "id": "39fe97d4-c8ad-42a4-80b6-e19ede1e72d9",
+         "country": "FR",
+         "type": "Person",
+         "disambiguation": "",
+         "name": "Tiburk Sound System",
+         "sort-name": "Tiburk Sound System"
+        }
+       }
+      ],
+      "first-release-date": "2015-04-18",
+      "video": false,
+      "length": 301000,
+      "title": "So Strong",
+      "id": "07e225a6-231e-4a6d-b247-15296c3e5ed5",
+      "disambiguation": ""
+     },
+     "id": "eae7d7d9-415f-458f-9ce6-b67c2f4c62e3",
+     "title": "So Strong",
+     "position": 1,
+     "length": 301000
+    },
+    {
+     "recording": {
+      "title": "The Monkey Story",
+      "id": "42f65899-3ba1-4b40-aab4-10eb776ac4a4",
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "name": "Mahom",
+        "joinphrase": "",
+        "artist": {
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "id": "eb8e2802-0fa3-4ec8-a1a4-8d6c85caf8e1",
+         "country": "FR",
+         "disambiguation": "appears on dub netlabels",
+         "type": "Group",
+         "name": "Mahom",
+         "sort-name": "Mahom"
+        }
+       }
+      ],
+      "first-release-date": "2015-04-18",
+      "length": 209000,
+      "video": false
+     },
+     "number": "2",
+     "artist-credit": [
+      {
+       "joinphrase": "",
+       "artist": {
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "appears on dub netlabels",
+        "type": "Group",
+        "country": "FR",
+        "id": "eb8e2802-0fa3-4ec8-a1a4-8d6c85caf8e1",
+        "sort-name": "Mahom",
+        "name": "Mahom"
+       },
+       "name": "Mahom"
+      }
+     ],
+     "length": 209000,
+     "position": 2,
+     "id": "76d20b28-1894-4371-a38b-25a4f095cb65",
+     "title": "The Monkey Story"
+    },
+    {
+     "id": "4ae7e52b-7b1c-4859-ba06-0427a1728739",
+     "title": "Jessy Bett",
+     "position": 3,
+     "length": 223000,
+     "artist-credit": [
+      {
+       "name": "Panda Dub",
+       "joinphrase": "",
+       "artist": {
+        "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+        "country": "FR",
+        "type": "Person",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "sort-name": "Panda Dub",
+        "name": "Panda Dub"
+       }
+      }
+     ],
+     "recording": {
+      "title": "Jessy Bett",
+      "id": "fb3674a4-2f5d-4a9e-bb89-786bdfc8c1de",
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "name": "Panda Dub",
+        "artist": {
+         "name": "Panda Dub",
+         "sort-name": "Panda Dub",
+         "type": "Person",
+         "disambiguation": "",
+         "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+         "country": "FR",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+       }
+      ],
+      "first-release-date": "2015-04-18",
+      "video": false,
+      "length": 223000
+     },
+     "number": "3"
+    },
+    {
+     "number": "4",
+     "recording": {
+      "disambiguation": "",
+      "title": "Ecosse Ton Dub",
+      "id": "e6fec212-9671-45ca-a904-dce3bf9b665f",
+      "video": false,
+      "length": 326000,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "artist": {
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "disambiguation": "",
+         "type": "Group",
+         "country": "FR",
+         "id": "1c575d9d-1bc0-4ab2-b680-fa4e1db06bb1",
+         "name": "Tetra Hydro K",
+         "sort-name": "Tetra Hydro K"
+        },
+        "name": "Tetra Hydro K"
+       }
+      ],
+      "first-release-date": "2015-04-18"
+     },
+     "artist-credit": [
+      {
+       "joinphrase": "",
+       "artist": {
+        "country": "FR",
+        "id": "1c575d9d-1bc0-4ab2-b680-fa4e1db06bb1",
+        "type": "Group",
+        "disambiguation": "",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "sort-name": "Tetra Hydro K",
+        "name": "Tetra Hydro K"
+       },
+       "name": "Tetra Hydro K"
+      }
+     ],
+     "position": 4,
+     "title": "Ecosse Ton Dub",
+     "id": "8198f97f-be7f-4c18-a815-9903bd1fec66",
+     "length": 326000
+    },
+    {
+     "length": 255000,
+     "position": 5,
+     "title": "Jah Is My Light",
+     "id": "8d3a2c63-5489-4b9d-8969-d945b103781a",
+     "recording": {
+      "title": "Jah Is My Light",
+      "id": "203e4a9a-8c59-4594-abe8-c5b83bd91de7",
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "French Bass Music producer living in Berlin",
+         "type": "Person",
+         "id": "0ab80942-f10d-4bb2-a711-90c02862f054",
+         "country": "DE",
+         "sort-name": "Yanneck",
+         "name": "Yanneck"
+        },
+        "joinphrase": "",
+        "name": "Yanneck"
+       }
+      ],
+      "first-release-date": "2015-04-18",
+      "video": false,
+      "length": 255000
+     },
+     "number": "5",
+     "artist-credit": [
+      {
+       "artist": {
+        "sort-name": "Yanneck",
+        "name": "Yanneck",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "DE",
+        "id": "0ab80942-f10d-4bb2-a711-90c02862f054",
+        "type": "Person",
+        "disambiguation": "French Bass Music producer living in Berlin"
+       },
+       "joinphrase": "",
+       "name": "Yanneck"
+      }
+     ]
+    },
+    {
+     "recording": {
+      "artist-credit": [
+       {
+        "artist": {
+         "sort-name": "Hubb, Maÿd",
+         "name": "Maÿd Hubb",
+         "country": "FR",
+         "id": "868d5345-1e84-438a-9069-b2a76421f49f",
+         "type": "Person",
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": "",
+        "name": "Maÿd Hubb"
+       }
+      ],
+      "first-release-date": "2015-04-18",
+      "length": 217000,
+      "video": false,
+      "title": "Switch",
+      "id": "95901fe2-0375-466f-83cb-03f84a76f802",
+      "disambiguation": ""
+     },
+     "number": "6",
+     "artist-credit": [
+      {
+       "name": "Maÿd Hubb",
+       "joinphrase": "",
+       "artist": {
+        "sort-name": "Hubb, Maÿd",
+        "name": "Maÿd Hubb",
+        "disambiguation": "",
+        "type": "Person",
+        "id": "868d5345-1e84-438a-9069-b2a76421f49f",
+        "country": "FR",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       }
+      }
+     ],
+     "length": 217000,
+     "position": 6,
+     "id": "7b16cb95-73a8-43e2-bf0c-38680edd3b31",
+     "title": "Switch"
+    },
+    {
+     "artist-credit": [
+      {
+       "name": "Thriakis Dub Destroyer",
+       "joinphrase": "",
+       "artist": {
+        "id": "3591a3b7-eeb5-42e4-9906-ef42c1ac4fea",
+        "country": "FR",
+        "type": null,
+        "disambiguation": "",
+        "type-id": null,
+        "sort-name": "Thriakis Dub Destroyer",
+        "name": "Thriakis Dub Destroyer"
+       }
+      }
+     ],
+     "recording": {
+      "disambiguation": "",
+      "id": "79e5f2ed-da15-4c64-a4a3-70e94be2e029",
+      "title": "The Wild Track",
+      "video": false,
+      "length": 250000,
+      "first-release-date": "2015-04-18",
+      "artist-credit": [
+       {
+        "artist": {
+         "type-id": null,
+         "type": null,
+         "disambiguation": "",
+         "country": "FR",
+         "id": "3591a3b7-eeb5-42e4-9906-ef42c1ac4fea",
+         "sort-name": "Thriakis Dub Destroyer",
+         "name": "Thriakis Dub Destroyer"
+        },
+        "joinphrase": "",
+        "name": "Thriakis Dub Destroyer"
+       }
+      ]
+     },
+     "number": "7",
+     "id": "14b7bb95-15d3-462d-a8c7-d02044379e24",
+     "title": "The Wild Track",
+     "position": 7,
+     "length": 250000
+    }
+   ],
+   "track-count": 7,
+   "format": "Digital Media",
+   "track-offset": 0,
+   "id": "af01cf8a-3e0f-38e7-b28e-babe969cb78a",
+   "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+   "title": "",
+   "position": 1
+  }
+ ],
+ "barcode": null,
+ "id": "69f601a5-21b8-48e2-9f05-829cfae0fea3",
+ "date": "2015-04-18",
+ "title": "Dub vs. Wild",
+ "country": "FR",
+ "text-representation": {
+  "language": null,
+  "script": null
+ },
+ "quality": "normal",
+ "label-info": [
+  {
+   "catalog-number": "ODGP082",
+   "label": {
+    "name": "Original Dub Gathering",
+    "sort-name": "Original Dub Gathering",
+    "type-id": null,
+    "label-code": null,
+    "type": null,
+    "disambiguation": "France based dub music netlabel, ODGprod",
+    "id": "db1296f0-d8de-438f-b5f6-89be9f3edaaa"
+   }
+  }
+ ],
+ "status": "Official",
+ "artist-credit": [
+  {
+   "name": "Various Artists",
+   "joinphrase": "",
+   "artist": {
+    "name": "Various Artists",
+    "sort-name": "Various Artists",
+    "type-id": "ac897045-5043-3294-969b-187360e45d86",
+    "country": null,
+    "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+    "disambiguation": "add compilations to this artist",
+    "type": "Other"
+   }
+  }
+ ],
+ "disambiguation": "",
+ "cover-art-archive": {
+  "darkened": false,
+  "back": false,
+  "front": true,
+  "count": 1,
+  "artwork": true
+ },
+ "packaging": null,
+ "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+ "release-events": [
+  {
+   "area": {
+    "name": "France",
+    "sort-name": "France",
+    "iso-3166-1-codes": [
+     "FR"
+    ],
+    "type-id": null,
+    "type": null,
+    "disambiguation": "",
+    "id": "08310658-51eb-3801-80de-5a0739207115"
+   },
+   "date": "2015-04-18"
+  }
+ ],
+ "asin": null,
+ "packaging-id": null
+}

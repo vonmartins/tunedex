@@ -72,7 +72,10 @@ def parse(value: object) -> Lookup:
                 score=score,
                 title=text(recording.get("title")),
                 artist=", ".join(names) or None,
-                duration=float(duration) if isinstance(duration, int | float) else None,
+                # AcoustID gives 0 for a recording whose length MusicBrainz lacks.
+                duration=float(duration)
+                if isinstance(duration, int | float) and duration > 0
+                else None,
             )
             previous = seen.get(recording_id)
             if previous is None or previous.score < score:

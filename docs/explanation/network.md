@@ -9,7 +9,7 @@ tunedex works offline. It has no accounts, no telemetry and no update checks, an
 | Service | What tunedex sends | What it gets back |
 |---|---|---|
 | [AcoustID](https://acoustid.org) | The audio fingerprint of the first two minutes of each file, and its length | The recordings that sound like it |
-| [MusicBrainz](https://musicbrainz.org) | The ids of those recordings and their releases | Titles, artists, labels, dates and ids |
+| [MusicBrainz](https://musicbrainz.org) | The ids of those recordings and their releases; sometimes a search for other recordings of the same song, by the title and artist id MusicBrainz itself gave | Titles, artists, labels, dates and ids |
 
 No file names, paths or tags are sent. A fingerprint is a compact summary of the sound: it identifies the recording, not your file.
 

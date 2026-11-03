@@ -2,10 +2,11 @@
 
 import json
 from typing import Any
+from urllib.parse import parse_qs, urlsplit
 
 import pytest
 
-from support.enrich import FIXTURES, FakeClock, FakeTransport
+from support.enrich import FIXTURES, FakeClock, FakeTransport, catalogue
 from tunedex.enrich import EnrichError, acoustid, musicbrainz
 from tunedex.enrich.cache import Cache
 from tunedex.enrich.http import Client
@@ -123,3 +124,68 @@ def test_no_label() -> None:
     data["label-info"][0]["label"]["name"] = "[no label]"
 
     assert musicbrainz.parse_release(data).label is None
+
+
+JOLGORIO_EP = "5fc92bf8-4d6d-421e-bf74-dd13cf5a92d4"
+JOLGORIO_ZAPPI = "ee517604-9f1a-4a33-a1fa-9ad55ab12eb4"
+JACEO = "ec98b948-05df-45ae-a1f3-367e695e2905"
+
+
+def test_release_kinds() -> None:
+    ep = musicbrainz.parse_recording(load(f"recording-{JOLGORIO_EP}.json"))
+    zappi = musicbrainz.parse_recording(load(f"recording-{JOLGORIO_ZAPPI}.json"))
+
+    (release,) = ep.releases
+    assert (release.title, release.primary_type, release.secondary_types) == (
+        "Jolgorio - EP",
+        "EP",
+        (),
+    )
+    assert release.original
+    (compilation,) = zappi.releases
+    assert compilation.secondary_types == ("Compilation",) and not compilation.original
+
+
+def test_dj_mix_is_not_original() -> None:
+    ref = musicbrainz.ReleaseRef("r", "Mix", "Official", None, "Album", ("Compilation", "DJ-mix"))
+    assert not ref.original
+    assert musicbrainz.ReleaseRef("r", "Live", "Official", None, "Album", ("Live",)).original
+    assert not musicbrainz.ReleaseRef("r", "Promo", "Promotion", None, "Single").original
+
+
+def test_search_sends_only_title_and_artist() -> None:
+    transport, clock = FakeTransport(), FakeClock()
+    transport.route(musicbrainz.API, lambda url, data: load("search-jolgorio-ec98b948.json"))
+    client = Client(transport, Cache(None), clock=clock, sleep=clock.sleep)
+
+    found = musicbrainz.search_recordings(client, "Jolgorio", JACEO)
+
+    _method, url, _data, _headers = transport.requests[0]
+    query = parse_qs(urlsplit(url).query)
+    assert query["query"] == [f'recording:"Jolgorio" AND arid:{JACEO}']
+    assert set(query) == {"query", "limit", "fmt"}
+    assert [r.title for r in found] == ["Jolgorio", "Jolgorio", "Jolgorio (original mix)"]
+    assert [r.releases[0].original for r in found] == [True, False, False]
+    assert all(JACEO in r.artist_ids for r in found)
+
+
+def test_search_escapes_quotes() -> None:
+    transport, clock = FakeTransport(), FakeClock()
+    transport.route(musicbrainz.API, lambda url, data: {"recordings": []})
+    client = Client(transport, Cache(None), clock=clock, sleep=clock.sleep)
+
+    musicbrainz.search_recordings(client, 'Say "Hi"', JACEO)
+
+    query = parse_qs(urlsplit(transport.requests[0][1]).query)["query"][0]
+    assert query == f'recording:"Say \\"Hi\\"" AND arid:{JACEO}'
+
+
+def test_search_fixture_routing() -> None:
+    transport = catalogue({})
+    client = Client(transport, Cache(None), clock=FakeClock(), sleep=lambda _s: None)
+
+    found = musicbrainz.search_recordings(
+        client, "Jessy Bett", "08557f73-6b1c-4281-ad93-ffa660f5b266"
+    )
+
+    assert {r.releases[0].title for r in found} == {"Dub vs. Wild", "Best of 2015"}

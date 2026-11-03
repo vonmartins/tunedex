@@ -1,0 +1,110 @@
+{
+ "relations": [],
+ "disambiguation": "",
+ "releases": [
+  {
+   "release-events": [
+    {
+     "area": {
+      "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+      "sort-name": "Germany",
+      "type": null,
+      "type-id": null,
+      "iso-3166-1-codes": [
+       "DE"
+      ],
+      "disambiguation": "",
+      "name": "Germany"
+     },
+     "date": "2016-06-03"
+    }
+   ],
+   "date": "2016-06-03",
+   "status": "Official",
+   "id": "7d9dec13-dc0d-487a-a31d-251279386472",
+   "text-representation": {
+    "script": "Latn",
+    "language": "eng"
+   },
+   "quality": "normal",
+   "country": "DE",
+   "disambiguation": "",
+   "release-group": {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "releases": [],
+    "secondary-types": [
+     "Compilation"
+    ],
+    "secondary-type-ids": [
+     "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "id": "4aa344fc-3bf2-4c85-aaa3-b09033ea64ac",
+    "artist-credit": [
+     {
+      "artist": {
+       "sort-name": "DJ Zappi",
+       "type": "Person",
+       "id": "468c5436-8d80-4f47-9411-7986991d9a9a",
+       "name": "DJ Zappi",
+       "country": null,
+       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+       "disambiguation": ""
+      },
+      "name": "Zappi",
+      "joinphrase": ""
+     }
+    ],
+    "primary-type": "Album",
+    "first-release-date": "2016-06-03",
+    "genres": [],
+    "title": "Zappi Rocks Ibiza"
+   },
+   "barcode": null,
+   "title": "Zappi Rocks Ibiza",
+   "genres": [],
+   "packaging": "None",
+   "artist-credit": [
+    {
+     "artist": {
+      "sort-name": "DJ Zappi",
+      "type": "Person",
+      "genres": [],
+      "id": "468c5436-8d80-4f47-9411-7986991d9a9a",
+      "name": "DJ Zappi",
+      "country": null,
+      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+      "disambiguation": ""
+     },
+     "joinphrase": "",
+     "name": "Zappi"
+    }
+   ],
+   "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+   "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+  }
+ ],
+ "length": 384000,
+ "id": "ee517604-9f1a-4a33-a1fa-9ad55ab12eb4",
+ "artist-credit": [
+  {
+   "artist": {
+    "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+    "genres": [],
+    "type": null,
+    "sort-name": "Jaceo",
+    "disambiguation": "",
+    "type-id": null,
+    "country": null,
+    "name": "Jaceo"
+   },
+   "joinphrase": "",
+   "name": "Jaceo"
+  }
+ ],
+ "isrcs": [],
+ "first-release-date": "2016-06-03",
+ "video": false,
+ "genres": [],
+ "title": "Jolgorio"
+}

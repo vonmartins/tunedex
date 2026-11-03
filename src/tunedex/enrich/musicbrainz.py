@@ -1,7 +1,7 @@
 """MusicBrainz: recordings, their credits and releases."""
 
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, cast
 
 from tunedex.enrich.errors import EnrichError
 from tunedex.enrich.http import Client
@@ -10,6 +10,8 @@ from tunedex.enrich.jsonish import obj, objects, text
 API = "https://musicbrainz.org/ws/2"
 HOST = "musicbrainz.org"
 INTERVAL = 1.0  # MusicBrainz allows one request per second
+SEARCH_LIMIT = 100  # the most MusicBrainz returns in one page
+NOT_ORIGINAL = frozenset({"Compilation", "DJ-mix"})
 
 
 @dataclass(frozen=True, slots=True)
@@ -18,6 +20,15 @@ class ReleaseRef:
     title: str
     status: str | None
     date: str | None
+    primary_type: str | None = None
+    """The release group's primary type, such as ``Album``, ``EP`` or ``Single``."""
+    secondary_types: tuple[str, ...] = ()
+    """The release group's secondary types, such as ``Compilation`` or ``DJ-mix``."""
+
+    @property
+    def original(self) -> bool:
+        """An official release that is neither a compilation nor a DJ mix."""
+        return self.status == "Official" and not (NOT_ORIGINAL & set(self.secondary_types))
 
 
 @dataclass(frozen=True, slots=True)
@@ -57,7 +68,7 @@ def credit(credits: list[dict[str, Any]]) -> str:
 def recording(client: Client, recording_id: str) -> Recording:
     data = client.get(
         f"{API}/recording/{recording_id}",
-        {"inc": "artist-credits+releases+isrcs+artist-rels+genres", "fmt": "json"},
+        {"inc": "artist-credits+releases+isrcs+artist-rels+genres+release-groups", "fmt": "json"},
     )
     return parse_recording(data)
 
@@ -91,9 +102,7 @@ def parse_recording(value: object) -> Recording:
         key=lambda g: (-g[1], g[0]),
     )
     releases = tuple(
-        ReleaseRef(
-            release_id, text(r.get("title")) or "", text(r.get("status")), text(r.get("date"))
-        )
+        _release_ref(release_id, r)
         for r in objects(data.get("releases"))
         if (release_id := text(r.get("id")))
     )
@@ -109,6 +118,40 @@ def parse_recording(value: object) -> Recording:
         remixers=remixers,
         genres=tuple(genres),
         releases=releases,
+    )
+
+
+def search_recordings(client: Client, title: str, artist_id: str) -> tuple[Recording, ...]:
+    """The recordings titled ``title`` by the artist ``artist_id``, with their releases.
+
+    Only MusicBrainz's own title and artist id are sent, never a track's tags.
+    """
+    phrase = title.replace("\\", "\\\\").replace('"', '\\"')
+    data = client.get(
+        f"{API}/recording/",
+        {
+            "query": f'recording:"{phrase}" AND arid:{artist_id}',
+            "limit": str(SEARCH_LIMIT),
+            "fmt": "json",
+        },
+    )
+    return tuple(parse_recording(r) for r in objects(obj(data).get("recordings")) if r.get("id"))
+
+
+def _release_ref(release_id: str, data: dict[str, Any]) -> ReleaseRef:
+    group = obj(data.get("release-group"))
+    secondary = group.get("secondary-types")
+    return ReleaseRef(
+        release_id,
+        text(data.get("title")) or "",
+        text(data.get("status")),
+        text(data.get("date")),
+        primary_type=text(group.get("primary-type")),
+        secondary_types=tuple(
+            t
+            for t in (cast("list[object]", secondary) if isinstance(secondary, list) else [])
+            if isinstance(t, str)
+        ),
     )
 
 

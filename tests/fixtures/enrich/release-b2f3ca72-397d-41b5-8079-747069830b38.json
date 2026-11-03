@@ -1,0 +1,173 @@
+{
+ "packaging": null,
+ "title": "Jolgorio - EP",
+ "cover-art-archive": {
+  "count": 1,
+  "front": true,
+  "back": false,
+  "darkened": false,
+  "artwork": true
+ },
+ "asin": null,
+ "label-info": [
+  {
+   "catalog-number": null,
+   "label": {
+    "sort-name": "Toolroom Productions Ltd",
+    "type": "Original Production",
+    "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+    "disambiguation": "parent label to UK based \"Toolroom\" family",
+    "name": "Toolroom Productions Ltd",
+    "id": "5df2e0e5-0556-460d-8417-65911700aa24",
+    "label-code": null
+   }
+  }
+ ],
+ "release-events": [
+  {
+   "date": "2015-08-28",
+   "area": {
+    "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+    "iso-3166-1-codes": [
+     "XW"
+    ],
+    "name": "[Worldwide]",
+    "type-id": null,
+    "type": null,
+    "sort-name": "[Worldwide]",
+    "disambiguation": ""
+   }
+  }
+ ],
+ "packaging-id": null,
+ "country": "XW",
+ "media": [
+  {
+   "position": 1,
+   "format": "Digital Media",
+   "tracks": [
+    {
+     "title": "Jolgorio",
+     "recording": {
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Jaceo",
+        "artist": {
+         "country": null,
+         "type-id": null,
+         "type": null,
+         "sort-name": "Jaceo",
+         "disambiguation": "",
+         "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+         "name": "Jaceo"
+        }
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2015-08-28",
+      "video": false,
+      "length": 383947,
+      "id": "5fc92bf8-4d6d-421e-bf74-dd13cf5a92d4",
+      "title": "Jolgorio"
+     },
+     "id": "923b017f-9d5b-41ac-b191-1f50ccb9a2a7",
+     "length": 383947,
+     "artist-credit": [
+      {
+       "name": "Jaceo",
+       "artist": {
+        "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+        "name": "Jaceo",
+        "disambiguation": "",
+        "country": null,
+        "type-id": null,
+        "type": null,
+        "sort-name": "Jaceo"
+       },
+       "joinphrase": ""
+      }
+     ],
+     "position": 1,
+     "number": "1"
+    },
+    {
+     "position": 2,
+     "artist-credit": [
+      {
+       "artist": {
+        "name": "Jaceo",
+        "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+        "disambiguation": "",
+        "sort-name": "Jaceo",
+        "type": null,
+        "type-id": null,
+        "country": null
+       },
+       "name": "Jaceo",
+       "joinphrase": ""
+      }
+     ],
+     "number": "2",
+     "length": 421000,
+     "id": "f9e8d6f1-8622-4e64-901d-45240aff1b2a",
+     "recording": {
+      "length": 421000,
+      "video": false,
+      "first-release-date": "2015-08-28",
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Jaceo",
+        "artist": {
+         "disambiguation": "",
+         "country": null,
+         "type-id": null,
+         "type": null,
+         "sort-name": "Jaceo",
+         "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+         "name": "Jaceo"
+        }
+       }
+      ],
+      "title": "Coqueta",
+      "id": "0b0dc900-318a-4f62-ac0f-fd4b092b62d0"
+     },
+     "title": "Coqueta"
+    }
+   ],
+   "track-offset": 0,
+   "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+   "id": "a84f3cf0-2b45-3992-927d-877c949e2721",
+   "track-count": 2,
+   "title": ""
+  }
+ ],
+ "quality": "normal",
+ "text-representation": {
+  "language": "spa",
+  "script": "Latn"
+ },
+ "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+ "id": "b2f3ca72-397d-41b5-8079-747069830b38",
+ "disambiguation": "",
+ "date": "2015-08-28",
+ "barcode": null,
+ "status": "Official",
+ "artist-credit": [
+  {
+   "artist": {
+    "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+    "name": "Jaceo",
+    "type-id": null,
+    "type": null,
+    "country": null,
+    "sort-name": "Jaceo",
+    "disambiguation": ""
+   },
+   "name": "Jaceo",
+   "joinphrase": ""
+  }
+ ]
+}

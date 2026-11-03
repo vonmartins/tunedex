@@ -16,7 +16,7 @@ from typing import Any
 
 from tunedex.adapters.losses import display_name
 from tunedex.enrich import EnrichError
-from tunedex.enrich.mapping import NORMALIZED, choose_release, first_release_date, map_recording
+from tunedex.enrich.mapping import NORMALIZED, first_release_date, map_recording
 from tunedex.enrich.match import (
     Disagreement,
     Identified,
@@ -26,6 +26,7 @@ from tunedex.enrich.match import (
     Unresolved,
     identify,
 )
+from tunedex.enrich.release import resolve
 from tunedex.enrich.service import Services
 from tunedex.model.encoding import to_json
 from tunedex.model.track import Track
@@ -71,6 +72,8 @@ class _Outcomes:
         default_factory=list[tuple[Track, Mismatch]]
     )
     missing: list[Track] = dataclasses.field(default_factory=list[Track])
+    albums_kept: dict[str, int] = dataclasses.field(default_factory=dict[str, int])
+    """Albums of identified tracks that no MusicBrainz release matched, with track counts."""
     failed: list[str] = dataclasses.field(default_factory=list[str])
 
 
@@ -127,7 +130,9 @@ def plan_enrich(
             case Identified(recording_id, score):
                 outcomes.identified.append(track)
                 result = _enrich(track, services, recording_id, score, bases.get(track.id))
-                merged, values, disagreements = result
+                merged, values, disagreements, album_kept = result
+                if album_kept and track.album:
+                    outcomes.albums_kept[track.album] = outcomes.albums_kept.get(track.album, 0) + 1
                 conflicts.extend(
                     FieldConflict(
                         track_id=track.id,
@@ -180,11 +185,15 @@ def _enrich(
     recording_id: str,
     score: float,
     base: dict[str, JSONValue] | None,
-) -> tuple[Track, dict[str, JSONValue], list[FieldDisagreement]]:
-    recording = services.recording(recording_id)
-    ref = choose_release(recording, track.album)
-    release = None if ref is None else services.release(ref.id)
-    mapped = map_recording(recording, release, score=score)
+) -> tuple[Track, dict[str, JSONValue], list[FieldDisagreement], bool]:
+    choice = resolve(
+        services.recording(recording_id),
+        track.album,
+        services.search_recordings,
+        services.recording,
+    )
+    release = None if choice.release is None else services.release(choice.release.id)
+    mapped = map_recording(choice.recording, release, score=score)
     fields = tuple(name for name in NORMALIZED if name in mapped.fields)
     values: dict[str, JSONValue] = {name: to_json(mapped.fields[name]) for name in fields}
     if base is None:
@@ -205,7 +214,7 @@ def _enrich(
     if unmapped != dict(track.unmapped):
         updates["unmapped"] = unmapped
     merged = dataclasses.replace(track, **updates) if updates else track
-    return merged, values, disagreements
+    return merged, values, disagreements, choice.album_kept
 
 
 def _change(track: Track, fields: tuple[FieldChange, ...]) -> TrackChange:
@@ -249,6 +258,8 @@ def _warnings(outcomes: _Outcomes) -> list[str]:
     if len(outcomes.mismatches) > MISMATCHES_SHOWN:
         hidden = len(outcomes.mismatches) - MISMATCHES_SHOWN
         warnings.append(f"… and {hidden} more tracks that disagree with their tags")
+    if outcomes.albums_kept:
+        warnings.append(_albums_kept(outcomes.albums_kept))
     warnings.extend(
         report(outcomes.unlinked, "tracks are recognized by AcoustID but not linked to MusicBrainz")
     )
@@ -256,3 +267,14 @@ def _warnings(outcomes: _Outcomes) -> list[str]:
     warnings.extend(report(outcomes.missing, "tracks were skipped because their files are missing"))
     warnings.extend(outcomes.failed[:5])
     return warnings
+
+
+ALBUMS_SHOWN = 10
+
+
+def _albums_kept(albums: dict[str, int]) -> str:
+    ordered = sorted(albums.items(), key=lambda item: (-item[1], item[0].casefold()))
+    shown = ", ".join(f"{album!r} ({count})" for album, count in ordered[:ALBUMS_SHOWN])
+    if len(ordered) > ALBUMS_SHOWN:
+        shown += f" and {len(ordered) - ALBUMS_SHOWN} more"
+    return f"albums not found in MusicBrainz, album fields kept: {shown}"

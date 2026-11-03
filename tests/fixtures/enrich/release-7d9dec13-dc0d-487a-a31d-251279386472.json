@@ -1,0 +1,1423 @@
+{
+ "country": "DE",
+ "quality": "normal",
+ "barcode": null,
+ "asin": "B01H11QN0G",
+ "disambiguation": "",
+ "date": "2016-06-03",
+ "release-events": [
+  {
+   "area": {
+    "type": null,
+    "sort-name": "Germany",
+    "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+    "name": "Germany",
+    "type-id": null,
+    "iso-3166-1-codes": [
+     "DE"
+    ],
+    "disambiguation": ""
+   },
+   "date": "2016-06-03"
+  }
+ ],
+ "text-representation": {
+  "language": "eng",
+  "script": "Latn"
+ },
+ "label-info": [
+  {
+   "label": {
+    "id": "a9940212-a043-4143-a695-b1850afba175",
+    "type": null,
+    "sort-name": "Clubstar",
+    "disambiguation": "German House label clubstar.net",
+    "type-id": null,
+    "label-code": 877,
+    "name": "Clubstar"
+   },
+   "catalog-number": null
+  }
+ ],
+ "id": "7d9dec13-dc0d-487a-a31d-251279386472",
+ "status": "Official",
+ "artist-credit": [
+  {
+   "name": "Zappi",
+   "joinphrase": "",
+   "artist": {
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "disambiguation": "",
+    "name": "DJ Zappi",
+    "country": null,
+    "id": "468c5436-8d80-4f47-9411-7986991d9a9a",
+    "sort-name": "DJ Zappi",
+    "type": "Person"
+   }
+  }
+ ],
+ "packaging": "None",
+ "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+ "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+ "title": "Zappi Rocks Ibiza",
+ "media": [
+  {
+   "track-count": 24,
+   "format": "Digital Media",
+   "position": 1,
+   "id": "e741f45e-fab0-3ebc-9dfb-a62e7fc5085e",
+   "tracks": [
+    {
+     "title": "Rollercoaster",
+     "id": "6cd414cc-2417-4f5e-98ff-62a1b06df23a",
+     "number": "1",
+     "length": 434288,
+     "position": 1,
+     "artist-credit": [
+      {
+       "artist": {
+        "id": "957146db-0f9f-471b-a9d6-8dc899de3f10",
+        "type": "Group",
+        "sort-name": "andhim",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "",
+        "country": "DE",
+        "name": "andhim"
+       },
+       "name": "andhim",
+       "joinphrase": ""
+      }
+     ],
+     "recording": {
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "andhim",
+        "artist": {
+         "sort-name": "andhim",
+         "type": "Group",
+         "id": "957146db-0f9f-471b-a9d6-8dc899de3f10",
+         "name": "andhim",
+         "country": "DE",
+         "disambiguation": "",
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+        }
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2015-09-11",
+      "video": false,
+      "title": "Rollercoaster",
+      "id": "3478e3b0-79f3-4b5c-a993-dbbe13cb66d1",
+      "length": 434288
+     }
+    },
+    {
+     "length": 417220,
+     "id": "a23f553b-1cbe-4c15-8f39-6d5de0e02052",
+     "number": "2",
+     "title": "Rotate",
+     "position": 2,
+     "recording": {
+      "video": false,
+      "title": "Rotate",
+      "length": 417220,
+      "id": "1bce19ba-5b18-4df0-8afe-cc7b78e583a9",
+      "first-release-date": "2016-06-03",
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "name": "Mihai Popoviciu",
+        "joinphrase": "",
+        "artist": {
+         "id": "8e2f28f4-80ba-4a1f-9cd6-ffd62ef614d0",
+         "sort-name": "Popoviciu, Mihai",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "",
+         "name": "Mihai Popoviciu",
+         "country": "RO"
+        }
+       }
+      ]
+     },
+     "artist-credit": [
+      {
+       "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "name": "Mihai Popoviciu",
+        "country": "RO",
+        "id": "8e2f28f4-80ba-4a1f-9cd6-ffd62ef614d0",
+        "sort-name": "Popoviciu, Mihai",
+        "type": "Person"
+       },
+       "name": "Mihai Popoviciu",
+       "joinphrase": ""
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "id": "bc007728-45e4-4d9a-8fc6-4ca8a68db740",
+     "number": "3",
+     "length": 379742,
+     "title": "Let It Go",
+     "artist-credit": [
+      {
+       "joinphrase": " feat. ",
+       "name": "Millok",
+       "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "country": "BA",
+        "name": "Millok",
+        "id": "79b10949-f80d-48cc-8abb-7e24f27e45f3",
+        "type": "Person",
+        "sort-name": "Millok"
+       }
+      },
+      {
+       "artist": {
+        "disambiguation": "",
+        "type-id": null,
+        "country": null,
+        "name": "New5ense",
+        "id": "1b3cbb3f-f5ef-4f97-8708-c60281422089",
+        "type": null,
+        "sort-name": "New5ense"
+       },
+       "name": "New5ense",
+       "joinphrase": ""
+      }
+     ],
+     "recording": {
+      "first-release-date": "2016-06-03",
+      "length": 379742,
+      "id": "a1f2abfd-1686-4e58-8f56-d0800ae7ee94",
+      "video": false,
+      "title": "Let It Go",
+      "artist-credit": [
+       {
+        "joinphrase": " feat. ",
+        "name": "Millok",
+        "artist": {
+         "id": "79b10949-f80d-48cc-8abb-7e24f27e45f3",
+         "type": "Person",
+         "sort-name": "Millok",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "",
+         "country": "BA",
+         "name": "Millok"
+        }
+       },
+       {
+        "artist": {
+         "sort-name": "New5ense",
+         "type": null,
+         "id": "1b3cbb3f-f5ef-4f97-8708-c60281422089",
+         "name": "New5ense",
+         "country": null,
+         "disambiguation": "",
+         "type-id": null
+        },
+        "name": "New5ense",
+        "joinphrase": ""
+       }
+      ],
+      "disambiguation": ""
+     }
+    },
+    {
+     "position": 4,
+     "title": "Cracks",
+     "length": 413593,
+     "number": "4",
+     "id": "85db1d2e-ea21-4302-9793-b04723347872",
+     "recording": {
+      "artist-credit": [
+       {
+        "name": "Simone Vitullo",
+        "joinphrase": " feat. ",
+        "artist": {
+         "name": "Simone Vitullo",
+         "country": "IT",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "Italian DJ and producer",
+         "sort-name": "Vitullo, Simone",
+         "type": "Person",
+         "id": "0c167775-4132-4f74-b307-acaae81b9468"
+        }
+       },
+       {
+        "artist": {
+         "type": null,
+         "sort-name": "Golden, Cari",
+         "id": "ecbc189c-581d-40b9-88c6-49332a71588a",
+         "country": null,
+         "name": "Cari Golden",
+         "disambiguation": "",
+         "type-id": null
+        },
+        "joinphrase": "",
+        "name": "Cari Golden"
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2016-06-03",
+      "length": 413593,
+      "id": "9ef3279a-a16b-4a8e-abd2-78c3dfb1e6b2",
+      "title": "Cracks",
+      "video": false
+     },
+     "artist-credit": [
+      {
+       "artist": {
+        "id": "0c167775-4132-4f74-b307-acaae81b9468",
+        "sort-name": "Vitullo, Simone",
+        "type": "Person",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "Italian DJ and producer",
+        "name": "Simone Vitullo",
+        "country": "IT"
+       },
+       "joinphrase": " feat. ",
+       "name": "Simone Vitullo"
+      },
+      {
+       "artist": {
+        "country": null,
+        "name": "Cari Golden",
+        "type-id": null,
+        "disambiguation": "",
+        "type": null,
+        "sort-name": "Golden, Cari",
+        "id": "ecbc189c-581d-40b9-88c6-49332a71588a"
+       },
+       "joinphrase": "",
+       "name": "Cari Golden"
+      }
+     ]
+    },
+    {
+     "recording": {
+      "first-release-date": "2016-06-03",
+      "title": "Bylusion (Metodi Hristov & Gallya remix)",
+      "video": false,
+      "id": "f02042f1-694a-4889-bd8e-1a65840c382d",
+      "length": 392271,
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Danniel Selfmade",
+        "artist": {
+         "id": "9c3a454b-494d-471f-a34b-e90409a685f0",
+         "sort-name": "Selfmade, Danniel",
+         "type": null,
+         "type-id": null,
+         "disambiguation": "",
+         "name": "Danniel Selfmade",
+         "country": null
+        }
+       }
+      ],
+      "disambiguation": ""
+     },
+     "artist-credit": [
+      {
+       "artist": {
+        "sort-name": "Selfmade, Danniel",
+        "type": null,
+        "id": "9c3a454b-494d-471f-a34b-e90409a685f0",
+        "name": "Danniel Selfmade",
+        "country": null,
+        "type-id": null,
+        "disambiguation": ""
+       },
+       "joinphrase": "",
+       "name": "Danniel Selfmade"
+      }
+     ],
+     "length": 392271,
+     "number": "5",
+     "id": "c4623f47-9eef-4db1-8e66-f6a233bb1fe5",
+     "title": "Bylusion (Metodi Hristov & Gallya remix)",
+     "position": 5
+    },
+    {
+     "recording": {
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Will Gold",
+         "country": "GB",
+         "id": "d0454d3f-334e-41f0-846d-4579f77a3164",
+         "sort-name": "Gold, Will",
+         "type": "Person"
+        },
+        "joinphrase": " & ",
+        "name": "Will Gold"
+       },
+       {
+        "artist": {
+         "name": "Manuel de la Mare",
+         "country": "IT",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "",
+         "sort-name": "Mare, Manuel, de la",
+         "type": "Person",
+         "id": "d2e4132a-cdf3-404e-a00a-0f08eb11e1c3"
+        },
+        "name": "Manuel de la Mare",
+        "joinphrase": ""
+       }
+      ],
+      "video": false,
+      "title": "Warehouse 47 (Stefan Naimor remix)",
+      "length": 439024,
+      "id": "0ddbcb57-2957-4c36-ba88-b99023a0709f",
+      "first-release-date": "2016-06-03"
+     },
+     "artist-credit": [
+      {
+       "joinphrase": " & ",
+       "name": "Will Gold",
+       "artist": {
+        "sort-name": "Gold, Will",
+        "type": "Person",
+        "id": "d0454d3f-334e-41f0-846d-4579f77a3164",
+        "name": "Will Gold",
+        "country": "GB",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       }
+      },
+      {
+       "name": "Manuel de la Mare",
+       "joinphrase": "",
+       "artist": {
+        "country": "IT",
+        "name": "Manuel de la Mare",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "type": "Person",
+        "sort-name": "Mare, Manuel, de la",
+        "id": "d2e4132a-cdf3-404e-a00a-0f08eb11e1c3"
+       }
+      }
+     ],
+     "title": "Warehouse 47 (Stefan Naimor remix)",
+     "length": 439024,
+     "number": "6",
+     "id": "9aeb1e71-ac5e-4aa7-a122-ce54d2206e70",
+     "position": 6
+    },
+    {
+     "id": "9b011544-4202-4e01-9362-2cc4b87c1a86",
+     "number": "7",
+     "length": 427560,
+     "title": "Mind Game (Mario Aureo remix)",
+     "position": 7,
+     "artist-credit": [
+      {
+       "artist": {
+        "disambiguation": "",
+        "type-id": null,
+        "name": "Athea",
+        "country": null,
+        "id": "63e9be84-8831-437d-9d61-751f44c4f032",
+        "sort-name": "Athea",
+        "type": null
+       },
+       "name": "Athea",
+       "joinphrase": ""
+      }
+     ],
+     "recording": {
+      "first-release-date": "2016-06-03",
+      "id": "79b2249d-df76-4885-a319-959d2e5991f3",
+      "length": 427560,
+      "title": "Mind Game (Mario Aureo remix)",
+      "video": false,
+      "artist-credit": [
+       {
+        "name": "Athea",
+        "joinphrase": "",
+        "artist": {
+         "id": "63e9be84-8831-437d-9d61-751f44c4f032",
+         "type": null,
+         "sort-name": "Athea",
+         "type-id": null,
+         "disambiguation": "",
+         "country": null,
+         "name": "Athea"
+        }
+       }
+      ],
+      "disambiguation": ""
+     }
+    },
+    {
+     "artist-credit": [
+      {
+       "joinphrase": "",
+       "name": "Anthony Attalla",
+       "artist": {
+        "type": "Person",
+        "sort-name": "Attalla, Anthony",
+        "id": "15d70460-7844-4561-8169-163d4f56fe0d",
+        "country": null,
+        "name": "Anthony Attalla",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": ""
+       }
+      }
+     ],
+     "recording": {
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "name": "Anthony Attalla",
+        "joinphrase": "",
+        "artist": {
+         "country": null,
+         "name": "Anthony Attalla",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "",
+         "type": "Person",
+         "sort-name": "Attalla, Anthony",
+         "id": "15d70460-7844-4561-8169-163d4f56fe0d"
+        }
+       }
+      ],
+      "length": 448000,
+      "id": "d0558372-6bbe-4166-bd63-a2bffaf19b0d",
+      "video": false,
+      "title": "F1",
+      "first-release-date": "2016-06-03"
+     },
+     "title": "F1",
+     "id": "80135afc-022a-463d-8b14-5e9683f0365c",
+     "number": "8",
+     "length": 448000,
+     "position": 8
+    },
+    {
+     "recording": {
+      "title": "On Your Mind (The Deepshakerz rework)",
+      "video": false,
+      "id": "47734fd4-d677-46bd-8281-5025c6488491",
+      "length": 391209,
+      "first-release-date": "2016-06-03",
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "artist": {
+         "name": "Qubiko",
+         "country": "IT",
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Qubiko",
+         "type": "Person",
+         "id": "e351a568-0267-4575-ab19-490de533e348"
+        },
+        "name": "Qubiko",
+        "joinphrase": " & "
+       },
+       {
+        "name": "Fabio Ricciuti",
+        "joinphrase": "",
+        "artist": {
+         "name": "Fabio Ricciuti",
+         "country": null,
+         "disambiguation": "house",
+         "type-id": null,
+         "sort-name": "Ricciuti, Fabio",
+         "type": null,
+         "id": "09e33a1e-3861-4ef0-89cf-208af1d11e6a"
+        }
+       }
+      ]
+     },
+     "artist-credit": [
+      {
+       "name": "Qubiko",
+       "joinphrase": " & ",
+       "artist": {
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "IT",
+        "name": "Qubiko",
+        "id": "e351a568-0267-4575-ab19-490de533e348",
+        "type": "Person",
+        "sort-name": "Qubiko"
+       }
+      },
+      {
+       "artist": {
+        "type": null,
+        "sort-name": "Ricciuti, Fabio",
+        "id": "09e33a1e-3861-4ef0-89cf-208af1d11e6a",
+        "country": null,
+        "name": "Fabio Ricciuti",
+        "type-id": null,
+        "disambiguation": "house"
+       },
+       "joinphrase": "",
+       "name": "Fabio Ricciuti"
+      }
+     ],
+     "title": "On Your Mind (The Deepshakerz rework)",
+     "length": 391209,
+     "number": "9",
+     "id": "4fb02b54-e980-4845-8358-c92e51c56e8b",
+     "position": 9
+    },
+    {
+     "id": "ddd77da2-b126-43d1-b4f1-df815d1cad98",
+     "number": "10",
+     "length": 403256,
+     "title": "Whitness",
+     "position": 10,
+     "artist-credit": [
+      {
+       "artist": {
+        "name": "Miguel Bastida",
+        "country": null,
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "sort-name": "Bastida, Miguel",
+        "type": "Person",
+        "id": "f78b0f75-57fe-47ee-89e4-a1412c214a44"
+       },
+       "name": "Miguel Bastida",
+       "joinphrase": ""
+      }
+     ],
+     "recording": {
+      "first-release-date": "2015-09-14",
+      "length": 403000,
+      "id": "8e8e15e7-48ee-4262-9c3a-dbf568d8851a",
+      "title": "Whitness",
+      "video": false,
+      "artist-credit": [
+       {
+        "artist": {
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "",
+         "country": null,
+         "name": "Miguel Bastida",
+         "id": "f78b0f75-57fe-47ee-89e4-a1412c214a44",
+         "type": "Person",
+         "sort-name": "Bastida, Miguel"
+        },
+        "name": "Miguel Bastida",
+        "joinphrase": ""
+       }
+      ],
+      "disambiguation": ""
+     }
+    },
+    {
+     "artist-credit": [
+      {
+       "artist": {
+        "country": "BG",
+        "name": "Metodi Hristov",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "Bulgarian DJ/producer based in Sofia",
+        "type": "Person",
+        "sort-name": "Hristov, Metodi",
+        "id": "ee176463-fb60-412a-a238-09df025212ee"
+       },
+       "name": "Metodi Hristov",
+       "joinphrase": ""
+      }
+     ],
+     "recording": {
+      "video": false,
+      "title": "Automatism",
+      "length": 392899,
+      "id": "5cfde670-6ded-46e0-a815-bedecab31dda",
+      "first-release-date": "2016-06-03",
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "artist": {
+         "disambiguation": "Bulgarian DJ/producer based in Sofia",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "BG",
+         "name": "Metodi Hristov",
+         "id": "ee176463-fb60-412a-a238-09df025212ee",
+         "type": "Person",
+         "sort-name": "Hristov, Metodi"
+        },
+        "name": "Metodi Hristov",
+        "joinphrase": ""
+       }
+      ]
+     },
+     "title": "Automatism",
+     "number": "11",
+     "id": "5fa60977-7d17-488b-9634-53b2ddb4ff0e",
+     "length": 392899,
+     "position": 11
+    },
+    {
+     "recording": {
+      "artist-credit": [
+       {
+        "name": "Pele",
+        "joinphrase": " & ",
+        "artist": {
+         "id": "79092955-a5bd-474a-99dd-5987d2a9d891",
+         "sort-name": "Pele",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "German electronica producer Patrick Gallenmüller",
+         "name": "Pele",
+         "country": "DE"
+        }
+       },
+       {
+        "artist": {
+         "sort-name": "Shawnecy",
+         "type": "Person",
+         "id": "2aa595d2-0a01-41a8-9759-cb7766b64bea",
+         "name": "Shawnecy",
+         "country": null,
+         "disambiguation": "Maysam Shawnecy",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Shawnecy",
+        "joinphrase": ""
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2015-11-13",
+      "video": false,
+      "title": "Better for My Brain (original mix)",
+      "id": "a8660bff-dcef-4107-a495-9c39a2f6040e",
+      "length": 398730
+     },
+     "artist-credit": [
+      {
+       "artist": {
+        "id": "79092955-a5bd-474a-99dd-5987d2a9d891",
+        "type": "Person",
+        "sort-name": "Pele",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "German electronica producer Patrick Gallenmüller",
+        "country": "DE",
+        "name": "Pele"
+       },
+       "joinphrase": " & ",
+       "name": "Pele"
+      },
+      {
+       "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "Maysam Shawnecy",
+        "country": null,
+        "name": "Shawnecy",
+        "id": "2aa595d2-0a01-41a8-9759-cb7766b64bea",
+        "type": "Person",
+        "sort-name": "Shawnecy"
+       },
+       "name": "Shawnecy",
+       "joinphrase": ""
+      }
+     ],
+     "length": 398709,
+     "id": "1acaa39e-a024-4b31-82d4-09ee1de2d225",
+     "number": "12",
+     "title": "Better for My Brain",
+     "position": 12
+    },
+    {
+     "artist-credit": [
+      {
+       "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "country": "IT",
+        "name": "Jean‐Claude Ades",
+        "id": "1155502e-6a94-45fc-a010-33725b44fd16",
+        "type": "Person",
+        "sort-name": "Ades, Jean‐Claude"
+       },
+       "joinphrase": " & ",
+       "name": "Jean Claude Ades"
+      },
+      {
+       "joinphrase": "",
+       "name": "Betoko",
+       "artist": {
+        "id": "fc466131-3307-48d0-b3ad-fec952db24db",
+        "type": "Person",
+        "sort-name": "Betoko",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "house producer from Mexico",
+        "country": "GB",
+        "name": "Betoko"
+       }
+      }
+     ],
+     "recording": {
+      "artist-credit": [
+       {
+        "artist": {
+         "sort-name": "Ades, Jean‐Claude",
+         "type": "Person",
+         "id": "1155502e-6a94-45fc-a010-33725b44fd16",
+         "name": "Jean‐Claude Ades",
+         "country": "IT",
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": " & ",
+        "name": "Jean Claude Ades"
+       },
+       {
+        "artist": {
+         "name": "Betoko",
+         "country": "GB",
+         "disambiguation": "house producer from Mexico",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Betoko",
+         "type": "Person",
+         "id": "fc466131-3307-48d0-b3ad-fec952db24db"
+        },
+        "joinphrase": "",
+        "name": "Betoko"
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2016-06-03",
+      "video": false,
+      "title": "Smiling at Me",
+      "length": 507205,
+      "id": "56fa9335-f283-483f-b2c0-77a2ab85fcf9"
+     },
+     "position": 13,
+     "title": "Smiling at Me",
+     "number": "13",
+     "id": "a2ecfaca-5cf2-44fe-ac82-f6be9185b4f1",
+     "length": 507205
+    },
+    {
+     "artist-credit": [
+      {
+       "artist": {
+        "name": "Ben Grunnell",
+        "country": null,
+        "type-id": null,
+        "disambiguation": "house",
+        "sort-name": "Grunnell, Ben",
+        "type": null,
+        "id": "206795bf-043b-4674-a182-ba113cffbb82"
+       },
+       "name": "Ben Grunnell",
+       "joinphrase": ""
+      }
+     ],
+     "recording": {
+      "artist-credit": [
+       {
+        "artist": {
+         "type": null,
+         "sort-name": "Grunnell, Ben",
+         "id": "206795bf-043b-4674-a182-ba113cffbb82",
+         "country": null,
+         "name": "Ben Grunnell",
+         "disambiguation": "house",
+         "type-id": null
+        },
+        "name": "Ben Grunnell",
+        "joinphrase": ""
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2016-06-03",
+      "video": false,
+      "title": "Push It (synth version)",
+      "length": 489481,
+      "id": "e849875d-4d0e-4f60-a66d-4db6b17c7a3f"
+     },
+     "title": "Push It (synth version)",
+     "id": "e300102b-0d06-44f2-b40c-d93791e08fa6",
+     "number": "14",
+     "length": 489481,
+     "position": 14
+    },
+    {
+     "artist-credit": [
+      {
+       "name": "Sertac Sahin",
+       "joinphrase": " & ",
+       "artist": {
+        "id": "adea7ae2-64a0-4ffd-8d11-d7610bd4a093",
+        "sort-name": "Sahin, Sertac",
+        "type": null,
+        "type-id": null,
+        "disambiguation": "house",
+        "name": "Sertac Sahin",
+        "country": null
+       }
+      },
+      {
+       "artist": {
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "",
+        "name": "Dan Stark",
+        "country": "UA",
+        "id": "f89079b2-2d29-41cf-86f1-b846c45affe0",
+        "sort-name": "Dan Stark",
+        "type": "Group"
+       },
+       "name": "Dan Stark",
+       "joinphrase": ""
+      }
+     ],
+     "recording": {
+      "first-release-date": "2016-06-03",
+      "id": "d423756a-41f6-4db4-b3a9-ebfd6e092ea8",
+      "length": 421517,
+      "title": "Keep Laughing",
+      "video": false,
+      "artist-credit": [
+       {
+        "artist": {
+         "id": "adea7ae2-64a0-4ffd-8d11-d7610bd4a093",
+         "type": null,
+         "sort-name": "Sahin, Sertac",
+         "type-id": null,
+         "disambiguation": "house",
+         "country": null,
+         "name": "Sertac Sahin"
+        },
+        "name": "Sertac Sahin",
+        "joinphrase": " & "
+       },
+       {
+        "artist": {
+         "country": "UA",
+         "name": "Dan Stark",
+         "disambiguation": "",
+         "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+         "type": "Group",
+         "sort-name": "Dan Stark",
+         "id": "f89079b2-2d29-41cf-86f1-b846c45affe0"
+        },
+        "name": "Dan Stark",
+        "joinphrase": ""
+       }
+      ],
+      "disambiguation": ""
+     },
+     "number": "15",
+     "id": "f54beec9-26da-499b-b7f5-4bdc072adb9f",
+     "length": 421517,
+     "title": "Keep Laughing",
+     "position": 15
+    },
+    {
+     "recording": {
+      "first-release-date": "2016-06-03",
+      "id": "e8ae86f1-c58d-444f-944e-abab704aa5c3",
+      "length": 392187,
+      "video": false,
+      "title": "Shambles (Squire remix)",
+      "artist-credit": [
+       {
+        "name": "Matthew Lima",
+        "joinphrase": " & ",
+        "artist": {
+         "id": "e948f7c1-43c9-4ff4-a96e-2e46fb781d7b",
+         "sort-name": "Lima, Matthew",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "Italian DJ and producer",
+         "name": "Matthew Lima",
+         "country": "IT"
+        }
+       },
+       {
+        "name": "Maiki",
+        "joinphrase": "",
+        "artist": {
+         "id": "bea01f7e-a8e6-4bf3-9ac4-4368122302e7",
+         "sort-name": "Maiki",
+         "type": "Person",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "German techno vocalist Maike Glock",
+         "name": "Maiki",
+         "country": "DE"
+        }
+       }
+      ],
+      "disambiguation": ""
+     },
+     "artist-credit": [
+      {
+       "name": "Matthew Lima",
+       "joinphrase": " & ",
+       "artist": {
+        "sort-name": "Lima, Matthew",
+        "type": "Person",
+        "id": "e948f7c1-43c9-4ff4-a96e-2e46fb781d7b",
+        "name": "Matthew Lima",
+        "country": "IT",
+        "disambiguation": "Italian DJ and producer",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+       }
+      },
+      {
+       "artist": {
+        "id": "bea01f7e-a8e6-4bf3-9ac4-4368122302e7",
+        "type": "Person",
+        "sort-name": "Maiki",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "German techno vocalist Maike Glock",
+        "country": "DE",
+        "name": "Maiki"
+       },
+       "joinphrase": "",
+       "name": "Maiki"
+      }
+     ],
+     "position": 16,
+     "title": "Shambles (Squire remix)",
+     "length": 392187,
+     "number": "16",
+     "id": "064f5b90-8b52-42b0-91c4-d78ea507b6f8"
+    },
+    {
+     "position": 17,
+     "title": "Basis",
+     "number": "17",
+     "id": "51deef44-3403-4b9a-8bf2-410f6cb58968",
+     "length": 374640,
+     "artist-credit": [
+      {
+       "name": "Metodi Hristov",
+       "joinphrase": "",
+       "artist": {
+        "id": "ee176463-fb60-412a-a238-09df025212ee",
+        "sort-name": "Hristov, Metodi",
+        "type": "Person",
+        "disambiguation": "Bulgarian DJ/producer based in Sofia",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Metodi Hristov",
+        "country": "BG"
+       }
+      }
+     ],
+     "recording": {
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Metodi Hristov",
+        "artist": {
+         "type": "Person",
+         "sort-name": "Hristov, Metodi",
+         "id": "ee176463-fb60-412a-a238-09df025212ee",
+         "country": "BG",
+         "name": "Metodi Hristov",
+         "disambiguation": "Bulgarian DJ/producer based in Sofia",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2016-06-03",
+      "video": false,
+      "title": "Basis",
+      "length": 374640,
+      "id": "ea8e8f66-b0f5-4d10-9a9d-95dd0ff765a9"
+     }
+    },
+    {
+     "position": 18,
+     "title": "The Owl",
+     "number": "18",
+     "id": "4908358e-0ae8-4f3f-b26d-cc2153f1b4f3",
+     "length": 382439,
+     "artist-credit": [
+      {
+       "joinphrase": " & ",
+       "name": "Natch!",
+       "artist": {
+        "country": null,
+        "name": "Natch!",
+        "type-id": null,
+        "disambiguation": "house",
+        "type": null,
+        "sort-name": "Natch!",
+        "id": "37ade739-9d23-49cd-b8b9-707469c39ce8"
+       }
+      },
+      {
+       "joinphrase": "",
+       "name": "Dothen",
+       "artist": {
+        "disambiguation": "house",
+        "type-id": null,
+        "country": null,
+        "name": "Dothen",
+        "id": "32ad7c68-ef6b-47b5-9d23-593b7d8ffac5",
+        "type": null,
+        "sort-name": "Dothen"
+       }
+      }
+     ],
+     "recording": {
+      "artist-credit": [
+       {
+        "joinphrase": " & ",
+        "name": "Natch!",
+        "artist": {
+         "country": null,
+         "name": "Natch!",
+         "disambiguation": "house",
+         "type-id": null,
+         "type": null,
+         "sort-name": "Natch!",
+         "id": "37ade739-9d23-49cd-b8b9-707469c39ce8"
+        }
+       },
+       {
+        "artist": {
+         "country": null,
+         "name": "Dothen",
+         "type-id": null,
+         "disambiguation": "house",
+         "type": null,
+         "sort-name": "Dothen",
+         "id": "32ad7c68-ef6b-47b5-9d23-593b7d8ffac5"
+        },
+        "name": "Dothen",
+        "joinphrase": ""
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2016-06-03",
+      "id": "aff2a60d-93a7-4f2e-840e-e7c7c4adb109",
+      "length": 382439,
+      "title": "The Owl",
+      "video": false
+     }
+    },
+    {
+     "position": 19,
+     "length": 440067,
+     "number": "19",
+     "id": "d44a0bff-c1c2-418e-8f5f-ff7eaed1a911",
+     "title": "Degenreization",
+     "recording": {
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Cabarza",
+        "artist": {
+         "id": "8b0dd3a5-dadd-4dbc-ae39-74430c8a7e8b",
+         "type": null,
+         "sort-name": "Cabarza",
+         "type-id": null,
+         "disambiguation": "house",
+         "country": null,
+         "name": "Cabarza"
+        }
+       }
+      ],
+      "disambiguation": "",
+      "first-release-date": "2016-06-03",
+      "id": "22c92417-acaf-4801-b2a3-94ceb79b97d0",
+      "length": 440067,
+      "title": "Degenreization",
+      "video": false
+     },
+     "artist-credit": [
+      {
+       "artist": {
+        "type": null,
+        "sort-name": "Cabarza",
+        "id": "8b0dd3a5-dadd-4dbc-ae39-74430c8a7e8b",
+        "country": null,
+        "name": "Cabarza",
+        "disambiguation": "house",
+        "type-id": null
+       },
+       "name": "Cabarza",
+       "joinphrase": ""
+      }
+     ]
+    },
+    {
+     "position": 20,
+     "title": "No Laws (Kaiserdisco remix)",
+     "length": 457354,
+     "number": "20",
+     "id": "c0449634-8d68-491b-8217-dfc3d6d1ce65",
+     "recording": {
+      "first-release-date": "2016-06-03",
+      "video": false,
+      "title": "No Laws (Kaiserdisco remix)",
+      "length": 457354,
+      "id": "cafd88f0-efb5-4e04-980c-1bde642a977f",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Sven Tasnadi",
+        "artist": {
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "country": "DE",
+         "name": "Sven Tasnadi",
+         "id": "85e9f066-26f8-4e75-9894-b549a9880255",
+         "type": "Person",
+         "sort-name": "Tasnadi, Sven"
+        }
+       }
+      ],
+      "disambiguation": ""
+     },
+     "artist-credit": [
+      {
+       "joinphrase": "",
+       "name": "Sven Tasnadi",
+       "artist": {
+        "id": "85e9f066-26f8-4e75-9894-b549a9880255",
+        "type": "Person",
+        "sort-name": "Tasnadi, Sven",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "country": "DE",
+        "name": "Sven Tasnadi"
+       }
+      }
+     ]
+    },
+    {
+     "recording": {
+      "video": false,
+      "title": "Do You Mind",
+      "id": "32d1eaa1-7c12-41b7-a8ca-681b71cf3bea",
+      "length": 462005,
+      "first-release-date": "2016-06-03",
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "name": "Christian Nielsen",
+        "joinphrase": "",
+        "artist": {
+         "country": "DK",
+         "name": "Christian Nielsen",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "disambiguation": "Danish house musician",
+         "type": "Person",
+         "sort-name": "Nielsen, Christian",
+         "id": "19fe456e-79e3-43f9-b9da-4b23202a0121"
+        }
+       }
+      ]
+     },
+     "artist-credit": [
+      {
+       "joinphrase": "",
+       "name": "Christian Nielsen",
+       "artist": {
+        "id": "19fe456e-79e3-43f9-b9da-4b23202a0121",
+        "sort-name": "Nielsen, Christian",
+        "type": "Person",
+        "disambiguation": "Danish house musician",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Christian Nielsen",
+        "country": "DK"
+       }
+      }
+     ],
+     "position": 21,
+     "length": 462005,
+     "number": "21",
+     "id": "0f1a0924-d8b4-42a6-aefb-3713bdf4ffe4",
+     "title": "Do You Mind"
+    },
+    {
+     "position": 22,
+     "length": 384000,
+     "number": "22",
+     "id": "43e4873d-fda2-4f41-8b49-0ef2f1d332e4",
+     "title": "Jolgorio",
+     "recording": {
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "artist": {
+         "type": null,
+         "sort-name": "Jaceo",
+         "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+         "country": null,
+         "name": "Jaceo",
+         "type-id": null,
+         "disambiguation": ""
+        },
+        "joinphrase": "",
+        "name": "Jaceo"
+       }
+      ],
+      "title": "Jolgorio",
+      "video": false,
+      "length": 384000,
+      "id": "ee517604-9f1a-4a33-a1fa-9ad55ab12eb4",
+      "first-release-date": "2016-06-03"
+     },
+     "artist-credit": [
+      {
+       "name": "Jaceo",
+       "joinphrase": "",
+       "artist": {
+        "disambiguation": "",
+        "type-id": null,
+        "country": null,
+        "name": "Jaceo",
+        "id": "ec98b948-05df-45ae-a1f3-367e695e2905",
+        "type": null,
+        "sort-name": "Jaceo"
+       }
+      }
+     ]
+    },
+    {
+     "position": 23,
+     "title": "Shake",
+     "id": "2bfe1a61-28e3-492c-af7b-30b6e52e0ca7",
+     "number": "23",
+     "length": 452742,
+     "artist-credit": [
+      {
+       "name": "Sonny Fodera",
+       "joinphrase": "",
+       "artist": {
+        "name": "Sonny Fodera",
+        "country": "AU",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "sort-name": "Fodera, Sonny",
+        "type": "Person",
+        "id": "bd804804-588f-423f-9f62-66ba93b4a5a4"
+       }
+      }
+     ],
+     "recording": {
+      "disambiguation": "",
+      "artist-credit": [
+       {
+        "joinphrase": "",
+        "name": "Sonny Fodera",
+        "artist": {
+         "name": "Sonny Fodera",
+         "country": "AU",
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "sort-name": "Fodera, Sonny",
+         "type": "Person",
+         "id": "bd804804-588f-423f-9f62-66ba93b4a5a4"
+        }
+       }
+      ],
+      "id": "7f2c3c00-7608-4368-b9f9-efb414d47932",
+      "length": 452742,
+      "title": "Shake",
+      "video": false,
+      "first-release-date": "2016-06-03"
+     }
+    },
+    {
+     "recording": {
+      "first-release-date": "2016-06-03",
+      "length": 402855,
+      "id": "1ab63aed-6b54-4c51-ac84-0f519b1f851e",
+      "title": "Cala El Verano (Yousef & Kydus rework)",
+      "video": false,
+      "artist-credit": [
+       {
+        "name": "Kydus",
+        "joinphrase": " & ",
+        "artist": {
+         "id": "61cba5e1-667f-4baf-a94b-1c7a1e21762d",
+         "sort-name": "Kydus",
+         "type": "Person",
+         "disambiguation": "",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "Kydus",
+         "country": "GB"
+        }
+       },
+       {
+        "joinphrase": "",
+        "name": "DJ Dep",
+        "artist": {
+         "id": "ea0dfc7b-4eff-43e6-ad5d-3d9af468b6cc",
+         "sort-name": "DJ Dep",
+         "type": "Person",
+         "disambiguation": "Italian DJ, producer",
+         "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+         "name": "DJ Dep",
+         "country": "IT"
+        }
+       }
+      ],
+      "disambiguation": ""
+     },
+     "artist-credit": [
+      {
+       "name": "Kydus",
+       "joinphrase": " & ",
+       "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "country": "GB",
+        "name": "Kydus",
+        "id": "61cba5e1-667f-4baf-a94b-1c7a1e21762d",
+        "type": "Person",
+        "sort-name": "Kydus"
+       }
+      },
+      {
+       "artist": {
+        "id": "ea0dfc7b-4eff-43e6-ad5d-3d9af468b6cc",
+        "sort-name": "DJ Dep",
+        "type": "Person",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "Italian DJ, producer",
+        "name": "DJ Dep",
+        "country": "IT"
+       },
+       "name": "DJ Dep",
+       "joinphrase": ""
+      }
+     ],
+     "position": 24,
+     "length": 402855,
+     "id": "7d0c1bbe-b606-4260-a2af-340209e23d0a",
+     "number": "24",
+     "title": "Cala El Verano (Yousef & Kydus rework)"
+    }
+   ],
+   "title": "",
+   "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+   "track-offset": 0
+  }
+ ],
+ "cover-art-archive": {
+  "count": 1,
+  "artwork": true,
+  "darkened": false,
+  "front": true,
+  "back": false
+ }
+}

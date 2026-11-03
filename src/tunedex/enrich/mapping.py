@@ -4,7 +4,7 @@ import datetime
 from dataclasses import dataclass, field
 from typing import Any
 
-from tunedex.enrich.musicbrainz import Recording, Release, ReleaseRef
+from tunedex.enrich.musicbrainz import Recording, Release
 from tunedex.model.track import Track
 from tunedex.model.unmapped import JSONValue
 from tunedex.rules.fixes import extract_remixer
@@ -31,18 +31,6 @@ class Mapped:
     genre: str | None
     """Only to fill an empty genre."""
     unmapped: dict[str, JSONValue] = field(default_factory=dict[str, JSONValue])
-
-
-def choose_release(recording: Recording, album: str | None) -> ReleaseRef | None:
-    """The official release with the track's album title, else the earliest one."""
-    official = [r for r in recording.releases if r.status == "Official"]
-    if not official:
-        return None
-    if album:
-        named = [r for r in official if r.title.casefold() == album.casefold()]
-        if named:
-            official = named
-    return min(official, key=lambda r: (r.date or "9999", r.id))
 
 
 def first_release_date(recording: Recording) -> str | None:

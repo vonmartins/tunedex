@@ -1,7 +1,9 @@
 """Fakes for enrichment tests: a transport with canned answers, a clock and fpcalc."""
 
 import json
+import re
 import subprocess
+import urllib.parse
 from collections.abc import Callable, Mapping
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -91,11 +93,21 @@ def fixture(name: str) -> Any:
     return json.loads((FIXTURES / name).read_text(encoding="utf-8"))
 
 
+def search_fixture(url: str) -> str:
+    """The fixture name of a recording search: ``search-<title>-<artist id[:8]>.json``."""
+    query = urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)["query"][0]
+    found = re.fullmatch(r'recording:"(.*)" AND arid:([0-9a-f-]+)', query)
+    assert found is not None, query
+    title = re.sub(r"[^a-z0-9]+", "-", found[1].casefold()).strip("-")
+    return f"search-{title}-{found[2][:8]}.json"
+
+
 def catalogue(lookups: Mapping[str, Any]) -> FakeTransport:
     """A transport answering like AcoustID and MusicBrainz from the recorded fixtures.
 
-    ``lookups`` maps a fingerprint to the AcoustID answer for it; MusicBrainz recordings
-    and releases come from ``recording-<id>.json`` and ``release-<id>.json``.
+    ``lookups`` maps a fingerprint to the AcoustID answer for it; MusicBrainz recordings,
+    releases and searches come from ``recording-<id>.json``, ``release-<id>.json`` and
+    ``search-<title>-<artist>.json``.
     """
     transport = FakeTransport()
 
@@ -105,7 +117,10 @@ def catalogue(lookups: Mapping[str, Any]) -> FakeTransport:
 
     def entity(url: str, _data: Mapping[str, str] | None) -> Any:
         kind, rest = url.removeprefix("https://musicbrainz.org/ws/2/").split("/", 1)
-        path = FIXTURES / f"{kind}-{rest.split('?', 1)[0]}.json"
+        if rest.startswith("?"):
+            path = FIXTURES / search_fixture(url)
+        else:
+            path = FIXTURES / f"{kind}-{rest.split('?', 1)[0]}.json"
         if not path.exists():
             return Response(404, b'{"error": "Not Found"}')
         return fixture(path.name)

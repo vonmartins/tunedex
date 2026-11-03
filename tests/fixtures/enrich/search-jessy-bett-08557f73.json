@@ -1,0 +1,189 @@
+{
+ "created": "2026-11-02T17:43:08.373Z",
+ "count": 2,
+ "offset": 0,
+ "recordings": [
+  {
+   "id": "fb3674a4-2f5d-4a9e-bb89-786bdfc8c1de",
+   "score": 100,
+   "artist-credit-id": "13961a62-f51d-32f5-8f98-8c8e8bcd8ae6",
+   "title": "Jessy Bett",
+   "length": 223000,
+   "video": null,
+   "artist-credit": [
+    {
+     "name": "Panda Dub",
+     "artist": {
+      "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+      "name": "Panda Dub",
+      "sort-name": "Panda Dub"
+     }
+    }
+   ],
+   "first-release-date": "2015-04-18",
+   "releases": [
+    {
+     "id": "69f601a5-21b8-48e2-9f05-829cfae0fea3",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+     "count": 1,
+     "title": "Dub vs. Wild",
+     "status": "Official",
+     "artist-credit": [
+      {
+       "name": "Various Artists",
+       "artist": {
+        "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+        "name": "Various Artists",
+        "sort-name": "Various Artists",
+        "disambiguation": "add compilations to this artist"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "5c4bdc70-5e62-419a-b4cb-10fe41b38b51",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Dub vs. Wild",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+      ]
+     },
+     "date": "2015-04-18",
+     "country": "FR",
+     "release-events": [
+      {
+       "date": "2015-04-18",
+       "area": {
+        "id": "08310658-51eb-3801-80de-5a0739207115",
+        "name": "France",
+        "sort-name": "France",
+        "iso-3166-1-codes": [
+         "FR"
+        ]
+       }
+      }
+     ],
+     "track-count": 7,
+     "media": [
+      {
+       "id": "af01cf8a-3e0f-38e7-b28e-babe969cb78a",
+       "position": 1,
+       "format": "Digital Media",
+       "track": [
+        {
+         "id": "4ae7e52b-7b1c-4859-ba06-0427a1728739",
+         "number": "3",
+         "title": "Jessy Bett",
+         "length": 223000
+        }
+       ],
+       "track-count": 7,
+       "track-offset": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2120ba7f-2be3-4e3d-9224-13a2a76e80de",
+   "score": 100,
+   "artist-credit-id": "6c37a7a2-932f-33ad-b0e9-2700f79c917e",
+   "title": "Jessy Bett",
+   "length": 223745,
+   "video": null,
+   "artist-credit": [
+    {
+     "joinphrase": " feat. ",
+     "name": "Panda Dub",
+     "artist": {
+      "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+      "name": "Panda Dub",
+      "sort-name": "Panda Dub"
+     }
+    },
+    {
+     "name": "Art‐X",
+     "artist": {
+      "id": "f445d942-bef9-4411-ac0d-57e046cbd318",
+      "name": "Art‐X",
+      "sort-name": "Art‐X",
+      "disambiguation": "French dub melodica"
+     }
+    }
+   ],
+   "first-release-date": "2021-08-02",
+   "releases": [
+    {
+     "id": "fe550070-675f-418a-9482-aa72cc218564",
+     "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+     "artist-credit-id": "40649841-f841-3d7b-b556-646d2a150b2f",
+     "count": 1,
+     "title": "Best of 2015",
+     "status": "Official",
+     "artist-credit": [
+      {
+       "name": "ODGProd",
+       "artist": {
+        "id": "1232e62a-117f-4e75-a31a-ac4bb311013e",
+        "name": "ODGProd",
+        "sort-name": "ODGProd",
+        "disambiguation": "Dub"
+       }
+      }
+     ],
+     "release-group": {
+      "id": "df6a3645-0ee3-44f6-a21b-e553fda434de",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Best of 2015",
+      "primary-type": "Album",
+      "secondary-types": [
+       "Compilation"
+      ],
+      "secondary-type-ids": [
+       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+      ]
+     },
+     "date": "2021-08-02",
+     "country": "XW",
+     "release-events": [
+      {
+       "date": "2021-08-02",
+       "area": {
+        "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+        "name": "[Worldwide]",
+        "sort-name": "[Worldwide]",
+        "iso-3166-1-codes": [
+         "XW"
+        ]
+       }
+      }
+     ],
+     "track-count": 16,
+     "media": [
+      {
+       "id": "26faf830-9a99-3d7e-9d07-92d15fb06122",
+       "position": 1,
+       "format": "Digital Media",
+       "track": [
+        {
+         "id": "4ec05112-9816-4454-b236-5451ab1d45bb",
+         "number": "10",
+         "title": "Jessy Bett",
+         "length": 223745
+        }
+       ],
+       "track-count": 16,
+       "track-offset": 9
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
