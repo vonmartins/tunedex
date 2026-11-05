@@ -15,6 +15,7 @@ from tunedex.store.migrations import bundled_migrations, schema_version
 from tunedex.store.operations import (
     AddImportedTrack,
     IgnoreDuplicates,
+    JoinSourceItem,
     MergeTracks,
     RegisterSource,
 )
@@ -121,3 +122,33 @@ def test_upgrade_from_version_six(tmp_path: Path) -> None:
         assert schema_version(store._db) == bundled_migrations()[-1].version == 7  # pyright: ignore[reportPrivateUsage]
         assert store.get_track(track.id) == track
         assert (store.merged_paths(), store.not_duplicates()) == ({}, [])
+
+
+def test_joined_item_recorded(store: Store) -> None:
+    source = "rekordbox-1a2b3c4d5e6f"
+    track = Track(path_origin="/music/a.mp3", title="A")
+
+    apply(
+        store,
+        RegisterSource(source, NOW),
+        AddImportedTrack(track, source, {"title": "A"}, "540"),
+        JoinSourceItem(source, "127", "D:\\a.mp3", track.id),
+    )
+
+    assert store.merged_items(source) == {"127": track.id}
+    assert store.merged_paths() == {"D:/a.mp3": track.id}
+
+
+def test_joined_item_needs_its_track(store: Store) -> None:
+    source = "rekordbox-1a2b3c4d5e6f"
+    revision = store.revision()
+
+    with pytest.raises(StoreError):
+        apply(
+            store,
+            RegisterSource(source, NOW),
+            JoinSourceItem(source, "127", "D:/a.mp3", Track(path_origin="/x.mp3").id),
+        )
+
+    assert store.revision() == revision
+    assert store.merged_items(source) == {}

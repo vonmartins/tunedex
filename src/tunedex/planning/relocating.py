@@ -12,7 +12,7 @@ import posixpath
 import unicodedata
 from collections import Counter, defaultdict
 from collections.abc import Callable, Sequence, Set
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from tunedex.adapters.losses import display_name
@@ -67,6 +67,10 @@ class Found:
     not_found: list[Track]
     ambiguous: list[Track]
     warnings: list[str]
+    contested: dict[str, tuple[Path, list[Track]]] = field(
+        default_factory=dict[str, tuple[Path, list[Track]]]
+    )
+    """Normalized file path -> (file path, the tracks of ``ambiguous`` that each chose it)."""
 
 
 def find_files(
@@ -98,15 +102,18 @@ def find_files(
         else:
             chosen[track.id] = (track, best)
     claims = Counter(file.normalized for _track, file in chosen.values())
+    contested: dict[str, tuple[Path, list[Track]]] = {}
     for track_id, (track, file) in list(chosen.items()):
         if claims[file.normalized] > 1:
             del chosen[track_id]
             ambiguous.append(track)
+            contested.setdefault(file.normalized, (file.path, []))[1].append(track)
     return Found(
         chosen={i: (t, f.path, f.normalized) for i, (t, f) in chosen.items()},
         not_found=not_found,
         ambiguous=ambiguous,
         warnings=warnings,
+        contested=contested,
     )
 
 

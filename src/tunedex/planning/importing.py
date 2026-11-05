@@ -8,6 +8,7 @@ the source owns: imports replace its contents and leave every other node alone.
 import dataclasses
 import datetime
 import os
+from collections import Counter
 from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
@@ -37,6 +38,7 @@ from tunedex.store import Store
 from tunedex.store.operations import (
     AddImportedTrack,
     ImportOperation,
+    JoinSourceItem,
     RecordSourceValues,
     RegisterSource,
     ReplaceSourceFolder,
@@ -100,9 +102,10 @@ def plan_import(
     merged_items, merged_paths = store.merged_items(source), store.merged_paths()
     local: dict[TrackId, Track] = {}
     skipped: set[TrackId] = set()
+    joined: dict[TrackId, TrackId] = {}
     found_warnings: list[str] = []
     if find_in is not None:
-        local, skipped, found_warnings = _find_local(
+        local, skipped, joined, found_warnings = _find_local(
             read.library,
             read.keys,
             links,
@@ -183,6 +186,17 @@ def plan_import(
         if kept.id not in matched and kept.id not in linked_keys:
             update(theirs, library_tracks[kept.id], key, values)
 
+    # Items that share their file with another item become part of its track.
+    for item, kept in joined.items():
+        into = ids.get(kept)
+        if into is None:
+            continue
+        ids[item] = into
+        joined_item = read.library.tracks[item]
+        operations.append(
+            JoinSourceItem(source, read.keys.get(item), joined_item.path_origin, into)
+        )
+
     folder_operation, nodes = _source_folder(
         store, source, adapter, read.library, ids, library_tracks
     )
@@ -211,11 +225,12 @@ def _find_local(
     progress: Progress | None,
     *,
     merged: tuple[Mapping[str, TrackId], Mapping[str, TrackId]] = ({}, {}),
-) -> tuple[dict[TrackId, Track], set[TrackId], list[str]]:
+) -> tuple[dict[TrackId, Track], set[TrackId], dict[TrackId, TrackId], list[str]]:
     """Local copies under ``folder`` of the read tracks that are nowhere else to be found.
 
-    Returns the read tracks rewritten to their local paths, the ids of those not found or
-    ambiguous (not to be imported), and the warnings.
+    Returns the read tracks rewritten to their local paths, the ids of those not to be
+    imported (not found, ambiguous or joined), the joined ones with the read track each
+    was joined into, and the warnings.
     """
     lookups: list[Track] = []
     here: set[str] = set()
@@ -236,12 +251,33 @@ def _find_local(
         for track_id, (track, path, _normalized) in found.chosen.items()
     }
     skipped = {t.id for t in (*found.not_found, *found.ambiguous)}
+    joined: dict[TrackId, TrackId] = {}
+    joined_tracks: list[Track] = []
+    entries = Counter(
+        entry
+        for _parent, _index, node in read.walk()
+        if isinstance(node, Playlist)
+        for entry in node.entries
+    )
+    for path, claimants in found.contested.values():
+        kept, *others = sorted(claimants, key=lambda t: (-len(t.cues), -entries[t.id], t.path))
+        local[kept.id] = dataclasses.replace(kept, path_origin=os.fspath(path))
+        skipped.discard(kept.id)
+        for other in others:
+            joined[other.id] = kept.id
+            joined_tracks.append(other)
+    contested = {t.id for _path, claimants in found.contested.values() for t in claimants}
+    ambiguous = [t for t in found.ambiguous if t.id not in contested]
     warnings = [
         *found.warnings,
         *report(found.not_found, f"source tracks are not under {folder} and are not imported"),
-        *report(found.ambiguous, "source tracks match several files and are not imported"),
+        *report(ambiguous, "source tracks match several files and are not imported"),
+        *report(
+            joined_tracks,
+            "source items share a file with another item and were joined into it",
+        ),
     ]
-    return local, skipped, warnings
+    return local, skipped, joined, warnings
 
 
 def _missing_files(changes: list[TrackChange]) -> list[str]:

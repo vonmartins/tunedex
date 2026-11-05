@@ -31,6 +31,7 @@ from tunedex.store.operations import (
     AddTrack,
     EditTrack,
     IgnoreDuplicates,
+    JoinSourceItem,
     LibraryOperation,
     MarkMissing,
     MarkPresent,
@@ -245,6 +246,8 @@ class Store:
                 self._put_source_values(source, track_id, values, item_key)
             case ReplaceSourceFolder(source, folder):
                 self._replace_source_folder(source, folder)
+            case JoinSourceItem(source, item_key, path, into):
+                self._join_source_item(source, item_key, path, into)
             case RelocateTrack(track_id, path_origin):
                 self._relocate(track_id, path_origin)
             case EditTrack(track):
@@ -469,6 +472,20 @@ class Store:
             (name,),
         ).fetchall()
         return {key: TrackId(uuid.UUID(track_id)) for key, track_id in rows}
+
+    def _join_source_item(
+        self, source: str, item_key: str | None, path: str, into: TrackId
+    ) -> None:
+        self._require_track(into)
+        self._db.execute(
+            "INSERT OR REPLACE INTO merges (path, into_track) VALUES (?, ?)",
+            (normalize_path(path), str(into)),
+        )
+        if item_key is not None:
+            self._db.execute(
+                "INSERT OR REPLACE INTO merges (source, item_key, into_track) VALUES (?, ?, ?)",
+                (source, item_key, str(into)),
+            )
 
     def _require_track(self, track_id: TrackId) -> None:
         row = self._db.execute("SELECT 1 FROM tracks WHERE id = ?", (str(track_id),)).fetchone()
