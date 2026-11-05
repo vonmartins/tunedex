@@ -8,6 +8,10 @@ from tunedex.model.errors import ValidationError
 
 _WINDOWS_DRIVE = re.compile(r"^[A-Za-z]:[\\/]")
 
+# Audio file extension -> file format name, as scans name formats.
+EXTENSION_FORMATS = {".mp3": "mp3", ".flac": "flac", ".wav": "wav", ".aif": "aiff",
+                     ".aiff": "aiff", ".m4a": "m4a", ".ogg": "ogg"}  # fmt: skip
+
 
 def normalize_path(path: str, *, entity: str = "Track", field: str = "path") -> str:
     """Return the normalized form of an absolute path.
@@ -33,3 +37,9 @@ def normalize_path(path: str, *, entity: str = "Track", field: str = "path") -> 
         raise ValidationError(entity, field, f"must be absolute: {path!r}")
 
     return unicodedata.normalize("NFC", normalized)
+
+
+def format_of_extension(path: str) -> str | None:
+    """The file format named after a path's extension, as scans name it."""
+    suffix = path.rsplit("/", 1)[-1].rpartition(".")[2]
+    return EXTENSION_FORMATS.get(f".{suffix.lower()}") if suffix else None

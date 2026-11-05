@@ -9,11 +9,12 @@ import datetime
 import re
 import sqlite3
 from collections import Counter, defaultdict
-from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+from tunedex.adapters._values import build_track as _build
+from tunedex.adapters._values import text as _text
 from tunedex.adapters.errors import AdapterReadError
 from tunedex.adapters.mixxx.beats import ProtobufError, grid_from_mixxx
 from tunedex.adapters.mixxx.keys import key_from_id
@@ -380,27 +381,6 @@ class MixxxReader:
     def _report_skipped(self) -> None:
         for reason, count in self._skipped.items():
             self.warnings.append(f"{count} {reason} were skipped")
-
-
-def _build(
-    make: Callable[[dict[str, Any]], Track], values: dict[str, Any], path: str, warnings: list[str]
-) -> Track:
-    """Build a track, dropping (with a warning) any value the model rejects."""
-    values = dict(values)
-    while True:
-        try:
-            return make(values)
-        except ValidationError as error:
-            if error.field not in values:
-                raise
-            warnings.append(f"{path}: ignored invalid {error.field} ({error.message})")
-            del values[error.field]
-
-
-def _text(value: object) -> str | None:
-    if not isinstance(value, str):
-        return None
-    return value.strip() or None
 
 
 def _match_int(pattern: re.Pattern[str], value: object) -> int | None:
