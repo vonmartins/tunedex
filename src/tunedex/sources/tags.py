@@ -15,6 +15,8 @@ from mutagen.mp4 import MP4, MP4FreeForm
 from mutagen.wave import WAVE
 
 from tunedex.model.key import Key, parse_musical, parse_open_key
+from tunedex.model.paths import EXTENSION_FORMATS as _EXTENSION_FORMATS
+from tunedex.model.paths import format_of_extension as format_of_extension
 from tunedex.sources.frames import ID3 as ID3_FRAMES
 from tunedex.sources.frames import MP4 as MP4_ATOMS
 from tunedex.sources.frames import SOURCES, VORBIS, is_comment
@@ -51,14 +53,6 @@ _FORMATS: tuple[tuple[type, str], ...] = (
     (AIFF, "aiff"),
     (MP4, "m4a"),
 )
-_EXTENSION_FORMATS = {".mp3": "mp3", ".flac": "flac", ".wav": "wav", ".aif": "aiff",
-                      ".aiff": "aiff", ".m4a": "m4a", ".ogg": "ogg"}  # fmt: skip
-
-
-def format_of_extension(path: str) -> str | None:
-    """The file format named after a path's extension, as scans name it."""
-    suffix = path.rsplit("/", 1)[-1].rpartition(".")[2]
-    return _EXTENSION_FORMATS.get(f".{suffix.lower()}") if suffix else None
 
 
 # mutagen is only partially typed; opened files are handled dynamically.

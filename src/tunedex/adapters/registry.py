@@ -18,9 +18,19 @@ def _mixxx() -> Adapter:
     return MixxxAdapter()
 
 
+def _rekordbox() -> Adapter:
+    from tunedex.adapters.rekordbox import RekordboxAdapter
+
+    return RekordboxAdapter()
+
+
 # Name -> factory for a default-configured adapter. Imports are lazy so that
 # looking up one adapter does not load every format.
-_FACTORIES: dict[str, Callable[[], Adapter]] = {"m3u": _m3u, "mixxx": _mixxx}
+_FACTORIES: dict[str, Callable[[], Adapter]] = {
+    "m3u": _m3u,
+    "mixxx": _mixxx,
+    "rekordbox": _rekordbox,
+}
 
 
 def list_adapters() -> list[str]:

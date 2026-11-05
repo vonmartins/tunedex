@@ -312,6 +312,7 @@ $ tunedex import [OPTIONS] COMMAND [ARGS]...
 **Commands**:
 
 * `mixxx`: Import a Mixxx library: tracks, cues,...
+* `rekordbox`: Import a Rekordbox XML export: tracks,...
 * `beets`: Import the tracks of a beets library and...
 
 ### `tunedex import mixxx`
@@ -332,6 +333,34 @@ $ tunedex import mixxx [OPTIONS] [database]
 **Arguments**:
 
 * `database`: mixxxdb.sqlite or the Mixxx settings directory. Default: Mixxx's own.
+
+**Options**:
+
+* `--find-in <path>`: Look for tracks whose files are not on this computer in this folder; only the ones found are imported.
+* `--apply`: Apply the plan (asks for confirmation).
+* `-y, --yes`: Do not ask for confirmation.
+* `--json`: Print only a JSON document on stdout.
+* `--help`: Show this message and exit.
+
+### `tunedex import rekordbox`
+
+Import a Rekordbox XML export: tracks, keys, cues, loops, grids and playlists.
+
+The XML is only read. Rekordbox's playlists and folders go to a "Rekordbox" folder
+in tunedex, which later imports replace. For a collection exported on another
+computer, pass the folder holding its files with --find-in.
+
+Example: tunedex import rekordbox ~/rekordbox.xml --find-in ~/Music --apply
+
+**Usage**:
+
+```console
+$ tunedex import rekordbox [OPTIONS] {xml}
+```
+
+**Arguments**:
+
+* `xml`: The XML exported from Rekordbox (File > Export Collection in xml format).  [required]
 
 **Options**:
 

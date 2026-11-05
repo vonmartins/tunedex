@@ -14,17 +14,17 @@ A loss only concerns the target. The library keeps everything.
 
 ## Adapters today
 
-| | Mixxx | M3U |
-|---|---|---|
-| Reads | yes ([import](../guides/import-mixxx.md)) | no |
-| Writes | yes ([export](../guides/export-mixxx.md)) | yes ([export](../guides/export-m3u.md)) |
-| Track fields | artist, title, album, album artist, genre, composer, grouping, comment, year, track number, length, bitrate, sample rate, file format, BPM, key, rating, color, play count, last played, date added | artist, title, length |
-| Hot cues, memory cues, loops | yes | no |
-| Beat grids | yes | no |
-| Tags | no | no |
-| Folders | flattened into names: `Techno / Peak` | yes, as subfolders |
-| Smartlists | no | no |
-| Tracks in no playlist | yes | no |
+| | Mixxx | Rekordbox XML | M3U |
+|---|---|---|---|
+| Reads | yes ([import](../guides/import-mixxx.md)) | yes ([import](../guides/import-rekordbox.md)) | no |
+| Writes | yes ([export](../guides/export-mixxx.md)) | not yet | yes ([export](../guides/export-m3u.md)) |
+| Track fields | artist, title, album, album artist, genre, composer, grouping, comment, year, track number, length, bitrate, sample rate, file format, BPM, key, rating, color, play count, last played, date added | artist, title, album, genre, composer, grouping, comment, remixer, label, mix, year, track and disc number, length, bitrate, sample rate, file format, BPM, key, rating, color, play count, date added | artist, title, length |
+| Hot cues, memory cues, loops | yes | yes | no |
+| Beat grids | yes | yes | no |
+| Tags | no | no | no |
+| Folders | flattened into names: `Techno / Peak` | yes | yes, as subfolders |
+| Smartlists | no | no | no |
+| Tracks in no playlist | yes | yes | no |
 
 For tracks Mixxx already has, an export updates the text fields, year, track number, rating, color, BPM and key. The other fields are only written for tracks it adds, because Mixxx itself keeps them up to date.
 

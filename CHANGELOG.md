@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Importing from Rekordbox (`tunedex import rekordbox XML`): the XML that Rekordbox
+  exports is read without changing it. Tracks keep their tags, BPM, key (read from
+  Rekordbox's alphanumeric or musical notation), rating, color, hot cues, memory cues,
+  loops and beat grids; playlists and folders go into a `Rekordbox` folder. Grids that
+  tunedex cannot hold are left out with a warning, and data tunedex has no field for is
+  kept as unmapped data. `--find-in` imports a collection exported on another computer.
+
 ## [0.1.0] - 2026-10-31
 
 The first release. tunedex scans your music folder and imports Mixxx and beets

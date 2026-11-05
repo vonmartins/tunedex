@@ -115,12 +115,27 @@ class ReplaceSourceFolder:
     folder: Folder
 
 
+@dataclass(frozen=True, slots=True)
+class JoinSourceItem:
+    """A source item that shares its file with another item became part of ``into``.
+
+    It is recorded as merged into ``into``, by ``item_key`` when it has one and by its
+    normalized source ``path``.
+    """
+
+    source: str
+    item_key: str | None
+    path: str
+    into: TrackId
+
+
 ImportOperation: TypeAlias = (
     RegisterSource
     | AddImportedTrack
     | UpdateImportedTrack
     | RecordSourceValues
     | ReplaceSourceFolder
+    | JoinSourceItem
 )
 
 

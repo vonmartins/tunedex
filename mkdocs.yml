@@ -63,6 +63,7 @@ nav:
       - Tutorial: tutorial.md
   - Guides:
       - Importing from Mixxx: guides/import-mixxx.md
+      - Importing from Rekordbox: guides/import-rekordbox.md
       - Importing from beets: guides/import-beets.md
       - Relocating tracks: guides/relocate.md
       - Enriching tags: guides/enrich.md

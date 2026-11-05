@@ -6,9 +6,10 @@ from typing import Annotated
 import typer
 
 from tunedex.adapters.mixxx import MixxxAdapter
+from tunedex.adapters.rekordbox import RekordboxAdapter
 from tunedex.cli import _options, _paths
 from tunedex.cli._beets import beets_library, default_music_dir
-from tunedex.cli._flow import reported_errors, run
+from tunedex.cli._flow import fail, reported_errors, run
 from tunedex.cli._mixxx import default_mixxx_location, mixxx_database
 from tunedex.sources.beets import BeetsSource
 
@@ -57,6 +58,48 @@ def mixxx(
     adapter = MixxxAdapter()
     with reported_errors(as_json):
         location = mixxx_database(adapter, _paths.optional_file(database))
+        folder = _paths.optional_folder(find_in)
+    run(
+        ctx,
+        lambda engine: engine.plan_import(adapter, location, find_in=folder),
+        apply=apply,
+        yes=yes,
+        as_json=as_json,
+    )
+
+
+@app.command("rekordbox")
+def rekordbox(
+    ctx: typer.Context,
+    xml: Annotated[
+        Path,
+        typer.Argument(
+            help="The XML exported from Rekordbox (File > Export Collection in xml format).",
+            show_default=False,
+        ),
+    ],
+    find_in: FindIn = None,
+    apply: _options.Apply = False,
+    yes: _options.Yes = False,
+    as_json: _options.Json = False,
+    _no_color: _options.NoColor = False,
+) -> None:
+    """Import a Rekordbox XML export: tracks, keys, cues, loops, grids and playlists.
+
+    The XML is only read. Rekordbox's playlists and folders go to a "Rekordbox" folder
+    in tunedex, which later imports replace. For a collection exported on another
+    computer, pass the folder holding its files with --find-in.
+
+    Example: tunedex import rekordbox ~/rekordbox.xml --find-in ~/Music --apply
+    """
+    adapter = RekordboxAdapter()
+    with reported_errors(as_json):
+        location = _paths.file(xml)
+        if not location.exists():
+            fail(f"{xml} does not exist", "not_found")
+        detection = adapter.detect(location)
+        if not detection.matches:
+            fail(f"{xml} is not a Rekordbox XML export: {detection.reason}")
         folder = _paths.optional_folder(find_in)
     run(
         ctx,
